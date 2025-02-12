@@ -165,6 +165,26 @@
         - #NAVBAR
       -->
 
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const navLinks = document.querySelectorAll("[data-nav-link]");
+          const pages = document.querySelectorAll("[data-page]");
+      
+          navLinks.forEach(link => {
+            link.addEventListener("click", function () {
+              // Désactiver tous les liens et masquer toutes les sections
+              navLinks.forEach(btn => btn.classList.remove("active"));
+              pages.forEach(page => page.classList.remove("active"));
+      
+              // Activer le lien cliqué et afficher la bonne section
+              this.classList.add("active");
+              const targetPage = this.textContent.trim().toLowerCase();
+              document.querySelector(`[data-page="${targetPage}"]`).classList.add("active");
+            });
+          });
+        });
+      </script>
+
       <nav class="navbar">
 
         <ul class="navbar-list">
@@ -325,16 +345,16 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/cnfpt.png" alt="SAINT-CYR Pascal" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/cnfpt.png" alt="Pascal SAINT-CYR" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>SAINT-CYR Pascal</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Pascal SAINT-CYR</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
                     __
 
-                    SAINT-CYR Pascal
+                     Pascal SAINT-CYR
                     __
                   </p>
                 </div>
