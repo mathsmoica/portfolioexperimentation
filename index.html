@@ -165,25 +165,7 @@
         - #NAVBAR
       -->
 
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const navLinks = document.querySelectorAll("[data-nav-link]");
-          const pages = document.querySelectorAll("[data-page]");
-      
-          navLinks.forEach(link => {
-            link.addEventListener("click", function () {
-              // Désactiver tous les liens et masquer toutes les sections
-              navLinks.forEach(btn => btn.classList.remove("active"));
-              pages.forEach(page => page.classList.remove("active"));
-      
-              // Activer le lien cliqué et afficher la bonne section
-              this.classList.add("active");
-              const targetPage = this.textContent.trim().toLowerCase();
-              document.querySelector(`[data-page="${targetPage}"]`).classList.add("active");
-            });
-          });
-        });
-      </script>
+
 
       <nav class="navbar">
 
@@ -354,7 +336,7 @@
                   <p>
                     __
 
-                     Pascal SAINT-CYR
+                    Pascal SAINT-CYR
                     __
                   </p>
                 </div>
@@ -609,7 +591,7 @@
             </ul>
 
           </section>
-
+          </articles>
 
 
 
