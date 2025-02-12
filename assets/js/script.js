@@ -141,19 +141,24 @@ const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
+// Gestion de la navigation entre les pages
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
+    // Supprimer la classe "active" de tous les liens et sections
+    navigationLinks.forEach(link => link.classList.remove("active"));
+    pages.forEach(page => page.classList.remove("active"));
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+    // Récupérer la page cible en fonction du texte du bouton (sans espaces)
+    const targetPage = this.textContent.trim().toLowerCase();
+
+    // Activer la bonne section et le bouton correspondant
+    const activePage = document.querySelector(`[data-page="${targetPage}"]`);
+    if (activePage) {
+      activePage.classList.add("active");
+      this.classList.add("active");
+      window.scrollTo(0, 0);
+    } else {
+      console.error("Aucune section trouvée pour :", targetPage);
     }
-
   });
 }
