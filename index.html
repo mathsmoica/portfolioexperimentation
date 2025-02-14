@@ -336,7 +336,7 @@
                   <p>
                     __
 
-                     Pascal SAINT-CYR
+                    Pascal SAINT-CYR
                     __
                   </p>
                 </div>
@@ -363,7 +363,7 @@
 
               </div>
             </li>
-<!--
+            <!--
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
 
@@ -420,35 +420,35 @@
         <div class="modal-container" data-modal-container>
 
           <div class="overlay" data-overlay></div>
-        
+
           <section class="testimonials-modal">
-        
+
             <button class="modal-close-btn" data-modal-close-btn>
               <ion-icon name="close-outline"></ion-icon>
             </button>
-        
+
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
                 <img src="" alt="" width="80" data-modal-img> <!-- Avatar dynamique -->
               </figure>
-        
+
               <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
-        
+
             <div class="modal-content">
-        
+
               <h4 class="h3 modal-title" data-modal-title></h4> <!-- Nom dynamique -->
-        
+
               <time datetime="" data-modal-date></time> <!-- Date dynamique -->
-        
+
               <div data-modal-text>
                 <p></p> <!-- Texte dynamique -->
               </div>
-        
+
             </div>
-        
+
           </section>
-        
+
         </div>
 
 
@@ -465,14 +465,14 @@
             <li class="clients-item">
               <a href="#">
                 <img src="./assets/images/dc37cc00-3be0-41a2-a14e-693ec9a6593f.jpg" alt="client logo" width="400"
-                height="250" style="object-fit: cover;">
+                  height="250" style="object-fit: cover;">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
                 <img src="./assets/images/ctm.jpeg" alt="client logo" width="400" height="250"
-                style="object-fit: cover;">
+                  style="object-fit: cover;">
               </a>
             </li>
 
@@ -601,7 +601,7 @@
 
             </li>
 
-            
+
 
           </ol>
 
@@ -643,7 +643,7 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Programmation (Python, PHP, Java)</h5>
-                  <data value="70">70%</data>
+                <data value="70">70%</data>
               </div>
 
               <div class="skill-progress-bg">
@@ -683,14 +683,14 @@
                 <h5 class="h5">Cybersécurité</h5>
                 <data value="60">60%</data>
               </div>
-            
+
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 60%;"></div>
               </div>
-            
+
             </li>
 
-            
+
 
             <li class="skills-item">
 
@@ -780,14 +780,15 @@
             </ul>
 
           </div>
-<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+          <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
           <ul class="project-list">
 
-            <li class="project-item active" data-filter-item data-category="web development" onclick="openPopup()">  <a href="#">
+            <li class="project-item active" data-filter-item data-category="web development" onclick="openPopup()"> <a
+                href="#">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -804,23 +805,6 @@
               </a>
             </li>
             <!-----------------------POP UP---------------------------------------------------------------------------------->
-            <div id="popup" class="popup">
-              <div class="popup-content">
-                <span class="close-btn" onclick="closePopup()">&times;</span>
-                <h2>CNFPT-stage</h2>
-                <p>Traitement de Base de données</p>
-                <div class="video-container">
-                  <video controls>
-                    <source src="./assets/videos/stage-video1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                  <video controls>
-                    <source src="./assets/videos/stage-video2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                  <!-- Ajoutez autant de vidéos que nécessaire -->
-                </div>
-              </div>
             <div id="popup" class="popup">
               <div class="popup-content">
                 <span class="close-btn" onclick="closePopup()">&times;</span>
@@ -859,23 +843,37 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <!-- Projet CTM -->
+            <li class="project-item active" data-filter-item data-category="applications"
+              onclick="openPopup('ctm-popup')">
               <a href="#">
-
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/ctm-project.png" alt="CTM" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
+                <h3 class="project-title">CTM</h3>
+                <p class="project-category">Application de Cartographie de la Martinique</p>
               </a>
             </li>
+            <div id="ctm-popup" class="popup">
+              <div class="popup-content">
+                <span class="close-btn" onclick="closePopup('ctm-popup')">&times;</span>
+                <h2>CTM</h2>
+                <p>Application de Cartographie de la Martinique</p>
+                <div class="video-container">
+                  <video controls>
+                    <source src="./assets/videos/ctm-video1.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la balise vidéo.
+                  </video>
+                  <video controls>
+                    <source src="./assets/videos/ctm-video2.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la balise vidéo.
+                  </video>
+                </div>
+              </div>
+            </div>
 
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
