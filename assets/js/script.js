@@ -163,20 +163,29 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+function openPopup(popupId) {
+  document.getElementById(popupId).style.display = 'block';
+}
+
+function closePopup(popupId) {
+  document.getElementById(popupId).style.display = 'none';
+}
+
 document.addEventListener('click', function (event) {
   const popups = document.querySelectorAll('.popup');
   popups.forEach(popup => {
-    if (event.target === popup) {
-      popup.style.display = 'none';
-    }
+      if (event.target === popup) {
+          popup.style.display = 'none';
+      }
   });
 });
 
 document.addEventListener('keydown', function (event) {
   if (event.key === 'Escape') {
-    const popups = document.querySelectorAll('.popup');
-    popups.forEach(popup => {
-      popup.style.display = 'none';
-    });
+      const popups = document.querySelectorAll('.popup');
+      popups.forEach(popup => {
+          popup.style.display = 'none';
+      });
   }
-});
+}
+);
