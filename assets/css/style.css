@@ -1945,7 +1945,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   max-width: 90%;
   max-height: 90%;
   overflow-y: auto;
-  z-index: 1; /* Passe au-dessus du fond étoilé */
+  z-index: 10; /* Assure que le contenu est au-dessus du fond étoilé */
   background: rgba(255, 255, 255, 0.1); /* Ajout d'une légère transparence */
   backdrop-filter: blur(10px); /* Effet de flou */
   border: 2px solid rgba(255, 255, 255, 0.5); /* Bordure subtile */
