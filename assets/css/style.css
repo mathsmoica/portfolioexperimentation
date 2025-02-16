@@ -1913,6 +1913,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
 /*pop up*/
 .popup {
   display: none; /* Masqué par défaut */
@@ -1924,17 +1925,17 @@ textarea.form-input::-webkit-resizer { display: none; }
   background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Pour s'assurer qu'il est au-dessus des autres éléments */
+  z-index: 1000; /* Assure que le popup est au-dessus du site */
 }
 
-/* Ajout d'une div pour le fond étoilé dans le popup */
+/* Ajout d'un fond étoilé en arrière-plan */
 .popup .background {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: 0; /* Reste en arrière-plan */
 }
 
 .popup-content {
@@ -1944,11 +1945,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   max-width: 90%;
   max-height: 90%;
   overflow-y: auto;
-  z-index: 1;
-  background: transparent; /* Supprime le blanc */
-  backdrop-filter: blur(10px); /* Effet flou pour un effet de transparence */
-  border: 2px solid rgba(255, 255, 255, 0.5); /* Bordure légère pour contraste */
-  color: white; /* Rendre le texte blanc pour visibilité */
+  z-index: 1; /* Passe au-dessus du fond étoilé */
+  background: rgba(255, 255, 255, 0.1); /* Ajout d'une légère transparence */
+  backdrop-filter: blur(10px); /* Effet de flou */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Bordure subtile */
+  color: white; /* Texte en blanc */
 }
 
 .close-btn {
@@ -1956,16 +1957,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   float: right;
   font-size: 24px;
   font-weight: bold;
-}
-
-.video-container {
-  margin-top: 20px;
-}
-
-video {
-  width: 100%;
-  max-width: 600px;
-  margin-bottom: 20px;
 }
 
 .stars, .twinkling, .clouds {
@@ -1977,18 +1968,15 @@ video {
 }
 
 .stars {
-  z-index: 0;
   background: #000 url('https://i.imgur.com/YKY28eT.png') repeat top center;
 }
 
 .twinkling {
-  z-index: 1;
   background: transparent url('https://i.imgur.com/XYMF4ca.png') repeat top center;
   animation: move-twink-back 200s linear infinite;
 }
 
 .clouds {
-  z-index: 2;
   background: transparent url('https://i.imgur.com/mHbScrQ.png') repeat top center;
   animation: move-clouds-back 200s linear infinite;
 }
