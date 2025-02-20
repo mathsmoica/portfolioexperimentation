@@ -37,6 +37,180 @@
       - #SIDEBAR
     -->
 
+    <div class="container">
+      <div class="slice"></div>
+      <div class="slice"></div>
+      <div class="slice"></div>
+      <div class="slice"></div>
+      <div class="slice"></div>
+      <div class="slice"></div>
+    </div>
+    
+    <style>
+      .container {
+        --uib-size: 45px;
+        --uib-color: black;
+        --uib-speed: 2.5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: var(--uib-size);
+        width: var(--uib-size);
+      }
+    
+      .slice {
+        position: relative;
+        height: calc(var(--uib-size) / 6);
+        width: 100%;
+      }
+    
+      .slice::before,
+      .slice::after {
+        --uib-a: calc(var(--uib-speed) / -2);
+        --uib-b: calc(var(--uib-speed) / -6);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: calc(50% - var(--uib-size) / 12);
+        height: 100%;
+        width: calc(100% / 6);
+        border-radius: 50%;
+        background-color: var(--uib-color);
+        flex-shrink: 0;
+        animation: orbit var(--uib-speed) linear infinite;
+        transition: background-color 0.3s ease;
+      }
+    
+      .slice:nth-child(1)::after {
+        animation-delay: var(--uib-a);
+      }
+    
+      .slice:nth-child(2)::before {
+        animation-delay: var(--uib-b);
+      }
+    
+      .slice:nth-child(2)::after {
+        animation-delay: calc(var(--uib-a) + var(--uib-b));
+      }
+    
+      .slice:nth-child(3)::before {
+        animation-delay: calc(var(--uib-b) * 2);
+      }
+      .slice:nth-child(3)::after {
+        animation-delay: calc(var(--uib-a) + var(--uib-b) * 2);
+      }
+    
+      .slice:nth-child(4)::before {
+        animation-delay: calc(var(--uib-b) * 3);
+      }
+      .slice:nth-child(4)::after {
+        animation-delay: calc(var(--uib-a) + var(--uib-b) * 3);
+      }
+    
+      .slice:nth-child(5)::before {
+        animation-delay: calc(var(--uib-b) * 4);
+      }
+      .slice:nth-child(5)::after {
+        animation-delay: calc(var(--uib-a) + var(--uib-b) * 4);
+      }
+    
+      .slice:nth-child(6)::before {
+        animation-delay: calc(var(--uib-b) * 5);
+      }
+      .slice:nth-child(6)::after {
+        animation-delay: calc(var(--uib-a) + var(--uib-b) * 5);
+      }
+    
+      @keyframes orbit {
+        0% {
+          transform: translateX(calc(var(--uib-size) * 0.25)) scale(0.73684);
+          opacity: 0.65;
+        }
+        5% {
+          transform: translateX(calc(var(--uib-size) * 0.235)) scale(0.684208);
+          opacity: 0.58;
+        }
+        10% {
+          transform: translateX(calc(var(--uib-size) * 0.182)) scale(0.631576);
+          opacity: 0.51;
+        }
+        15% {
+          transform: translateX(calc(var(--uib-size) * 0.129)) scale(0.578944);
+          opacity: 0.44;
+        }
+        20% {
+          transform: translateX(calc(var(--uib-size) * 0.076)) scale(0.526312);
+          opacity: 0.37;
+        }
+        25% {
+          transform: translateX(0%) scale(0.47368);
+          opacity: 0.3;
+        }
+        30% {
+          transform: translateX(calc(var(--uib-size) * -0.076)) scale(0.526312);
+          opacity: 0.37;
+        }
+        35% {
+          transform: translateX(calc(var(--uib-size) * -0.129)) scale(0.578944);
+          opacity: 0.44;
+        }
+        40% {
+          transform: translateX(calc(var(--uib-size) * -0.182)) scale(0.631576);
+          opacity: 0.51;
+        }
+        45% {
+          transform: translateX(calc(var(--uib-size) * -0.235)) scale(0.684208);
+          opacity: 0.58;
+        }
+        50% {
+          transform: translateX(calc(var(--uib-size) * -0.25)) scale(0.73684);
+          opacity: 0.65;
+        }
+        55% {
+          transform: translateX(calc(var(--uib-size) * -0.235)) scale(0.789472);
+          opacity: 0.72;
+        }
+        60% {
+          transform: translateX(calc(var(--uib-size) * -0.182)) scale(0.842104);
+          opacity: 0.79;
+        }
+        65% {
+          transform: translateX(calc(var(--uib-size) * -0.129)) scale(0.894736);
+          opacity: 0.86;
+        }
+        70% {
+          transform: translateX(calc(var(--uib-size) * -0.076)) scale(0.947368);
+          opacity: 0.93;
+        }
+        75% {
+          transform: translateX(0%) scale(1);
+          opacity: 1;
+        }
+        80% {
+          transform: translateX(calc(var(--uib-size) * 0.076)) scale(0.947368);
+          opacity: 0.93;
+        }
+        85% {
+          transform: translateX(calc(var(--uib-size) * 0.129)) scale(0.894736);
+          opacity: 0.86;
+        }
+        90% {
+          transform: translateX(calc(var(--uib-size) * 0.182)) scale(0.842104);
+          opacity: 0.79;
+        }
+        95% {
+          transform: translateX(calc(var(--uib-size) * 0.235)) scale(0.789472);
+          opacity: 0.72;
+        }
+        100% {
+          transform: translateX(calc(var(--uib-size) * 0.25)) scale(0.73684);
+          opacity: 0.65;
+        }
+      }
+    </style>
+    
+    
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
@@ -863,6 +1037,11 @@
                 <div class="clouds"></div>
               </div>
               <div class="popup-content">
+                <div class="background">
+                  <div class="stars"></div>
+                  <div class="twinkling"></div>
+                  <div class="clouds"></div>
+                </div>
                 <span class="close-btn" onclick="closePopup('ctm-popup')">&times;</span>
                 <h2>CTM</h2>
                 <p>Application de Cartographie de la Martinique</p>
@@ -909,358 +1088,6 @@
             </div>
 
 
-            <!-- <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li> -->
-
-            </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <!-- <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article> -->
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <!-- <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Envoyer un message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article> -->
 
     </div>
 
