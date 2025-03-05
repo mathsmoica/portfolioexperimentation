@@ -1975,7 +1975,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: #ff9f9f; /* Change légèrement de couleur */
 }
 
-/* Effets d'arrière-plan dynamique */
+/* Effets d'arrière-plan dynamique
 @keyframes stars-animation {
   from {
     background-position: 0 0;
@@ -1993,3 +1993,4 @@ textarea.form-input::-webkit-resizer { display: none; }
     opacity: 1;
   }
 }
+ */
