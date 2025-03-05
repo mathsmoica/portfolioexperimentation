@@ -1950,7 +1950,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   width: 90%;
   background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent noir */
   color: white; /* Texte en blanc */
-  z-index: 10; /* S'assure que ce contenu est au-dessus */
+  z-index: 1000; /* S'assure que ce contenu est au-dessus */
   box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2); /* Ombre légère pour profondeur */
   text-align: center;
   overflow-y: auto; /* Contenu défilable si trop long */
