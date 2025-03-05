@@ -138,7 +138,7 @@
             <a href="#" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
-          </li> 
+          </li>
 
           <li class="social-item">
             <a href="https://www.instagram.com/tissou777/?hl=fr" class="social-link">
@@ -810,67 +810,115 @@
                 <span class="close-btn" onclick="closePopup('popup')">&times;</span>
                 <h2>CNFPT-stage</h2>
                 <p>Traitement de Base de données</p>
-                <div class="text-container">
-                  <p>
-                    <strong>Objet :</strong> Vérification de l'âge des employés dans notre base de données
-                  </p>
-                  <p>
-                    Bonjour,
-                  </p>
-                  <p>
-                    Je me présente, je suis EUSTACHE Mathis, stagiaire en informatique au CNFPT. Dans le cadre de mes
-                    fonctions, j'ai été chargé de vérifier les données des fiches agents de votre base de données. La
-                    1ère opération consiste à corriger d’une part les dates de naissance des agents (ayant moins de 18
-                    ans) et d’autre part de désactiver les agents qui seraient à la retraite et dont l’âge légal dépasse
-                    68 ans.
-                  </p>
-                  <p>
-                    Il est important de noter que conformément à la législation en vigueur, les personnes de 68 ans et
-                    plus sont généralement considérées comme étant à la retraite (Age limite est de 67 ans et le
-                    maintien en fonction jusqu’à 70 ans). Après avoir examiné votre base de données, j'ai constaté que
-                    certaines personnes ont une date de naissance leur donnant 68 ans ou plus.
-                  </p>
-                  <p>
-                    Je vous invite donc à examiner ces informations et à modifier les fiches des agents ayant moins de
-                    18 ans et à désactiver les fiches des agents de plus de 68 ans, ou qui seraient déjà à la retraite.
-                  </p>
-                  <p>
-                    <strong>Note :</strong> Ce message est un e-mail que j'ai envoyé à une collectivité pour leur
-                    soumettre les erreurs détectées dans les enregistrements de l'âge de la base de données.
-                  </p>
-                  <p>
-                    Je reste à votre disposition pour toute information complémentaire dont vous pourriez avoir besoin.
-                    Je vous remercie de votre attention et de votre compréhension.
-                  </p>
-                  <p>
-                    Cordialement,
-                  </p>
-                  <p>
-                    EUSTACHE Mathis<br>
-                    Stagiaire Informatique au CNFPT
-                  </p>
-                </div>
-
-                <!-- Espace pour la capture d'écran de la base de données -->
-                <div class="screenshot-container mt-4">
-                  <h3>Capture d'écran de la base de données</h3>
-                  <p>Voici une capture d'écran montrant les erreurs d'âge pour des agents de moins de 18 ans et de plus
-                    de 68 ans :</p>
-                  <img src="./assets/images/verif age.png" alt="Capture d'écran de la base de données" class="img-fluid"
-                    loading="lazy">
-
-                  <div class="screenshot-container mt-4">
-                    <img src="./assets/images/verif age+68.png" alt="Capture d'écran de la base de données"
-                      class="img-fluid" loading="lazy">
+                <div class="container my-5">
+                  <h1 class="text-center mb-5">Mes Missions au CNFPT</h1>
+                  <div class="row">
+                    <!-- Carte pour la mission 1 : Vérification de l'âge -->
+                    <div class="col-md-4 mb-4">
+                      <div class="mission-card" onclick="window.location.href='mission-verification-age.html'">
+                        <img src="./assets/images/cnfpt-verif-age.jpg" alt="Vérification de l'âge" loading="lazy">
+                        <div class="card-body">
+                          <h3 class="card-title">Vérification de l'âge</h3>
+                          <p class="card-text">Traitement des erreurs d'âge dans la base de données</p>
+                          <div class="text-container">
+                            <p>
+                              <strong>Objet :</strong> Vérification de l'âge des employés dans notre base de données
+                            </p>
+                            <p>
+                              Bonjour,
+                            </p>
+                            <p>
+                              Je me présente, je suis EUSTACHE Mathis, stagiaire en informatique au CNFPT. Dans le cadre de mes
+                              fonctions, j'ai été chargé de vérifier les données des fiches agents de votre base de données. La
+                              1ère opération consiste à corriger d’une part les dates de naissance des agents (ayant moins de 18
+                              ans) et d’autre part de désactiver les agents qui seraient à la retraite et dont l’âge légal dépasse
+                              68 ans.
+                            </p>
+                            <p>
+                              Il est important de noter que conformément à la législation en vigueur, les personnes de 68 ans et
+                              plus sont généralement considérées comme étant à la retraite (Age limite est de 67 ans et le
+                              maintien en fonction jusqu’à 70 ans). Après avoir examiné votre base de données, j'ai constaté que
+                              certaines personnes ont une date de naissance leur donnant 68 ans ou plus.
+                            </p>
+                            <p>
+                              Je vous invite donc à examiner ces informations et à modifier les fiches des agents ayant moins de
+                              18 ans et à désactiver les fiches des agents de plus de 68 ans, ou qui seraient déjà à la retraite.
+                            </p>
+                            <p>
+                              <strong>Note :</strong> Ce message est un e-mail que j'ai envoyé à une collectivité pour leur
+                              soumettre les erreurs détectées dans les enregistrements de l'âge de la base de données.
+                            </p>
+                            <p>
+                              Je reste à votre disposition pour toute information complémentaire dont vous pourriez avoir besoin.
+                              Je vous remercie de votre attention et de votre compréhension.
+                            </p>
+                            <p>
+                              Cordialement,
+                            </p>
+                            <p>
+                              EUSTACHE Mathis<br>
+                              Stagiaire Informatique au CNFPT
+                            </p>
+                          </div>
+                    
+                          <!-- Espace pour la capture d'écran de la base de données -->
+                          <div class="screenshot-container mt-4">
+                            <h3>Capture d'écran de la base de données</h3>
+                            <p>Voici une capture d'écran montrant les erreurs d'âge pour des agents de moins de 18 ans et de plus
+                              de 68 ans :</p>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="card">
+                                  <img src="./assets/images/verif age.png" alt="Capture d'écran - Moins de 18 ans" class="card-img-top img-fluid" loading="lazy">
+                                  <div class="card-body">
+                                    <p class="card-text text-center">Agents de moins de 18 ans</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="card">
+                                  <img src="./assets/images/verif age+68.png" alt="Capture d'écran - Plus de 68 ans" class="card-img-top img-fluid" loading="lazy">
+                                  <div class="card-body">
+                                    <p class="card-text text-center">Agents de plus de 68 ans</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <!-- Carte pour la mission 2 : Migration de données -->
+                    <div class="col-md-4 mb-4">
+                      <div class="mission-card" onclick="window.location.href='mission-migration-donnees.html'">
+                        <img src="./assets/images/cnfpt-migration.jpg" alt="Migration de données" loading="lazy">
+                        <div class="card-body">
+                          <h3 class="card-title">Migration de données</h3>
+                          <p class="card-text">Migration des données vers un nouveau système</p>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <!-- Carte pour la mission 3 : Analyse des performances -->
+                    <div class="col-md-4 mb-4">
+                      <div class="mission-card" onclick="window.location.href='mission-analyse-performances.html'">
+                        <img src="./assets/images/cnfpt-analyse.jpg" alt="Analyse des performances" loading="lazy">
+                        <div class="card-body">
+                          <h3 class="card-title">Analyse des performances</h3>
+                          <p class="card-text">Optimisation des performances du système</p>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <!-- Ajoutez d'autres cartes pour d'autres missions -->
                   </div>
-
                 </div>
-              </div>
-            </div>
-          </div>
 
 
-          <!-- <li class="project-item  active" data-filter-item data-category="web development">
+                <!-- <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
 
                 <figure class="project-img">
@@ -888,111 +936,111 @@
               </a>
             </li> -->
 
-          <!-- Projet CTM -->
-          <div class="row">
-            <li class="project-item active" data-filter-item data-category="applications"
-              onclick="openPopup('ctm-popup')">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/2ctm.jpeg" width="500" height="300" alt="CTM" loading="lazy">
-                </figure>
-                <h3 class="project-title">CTM</h3>
-                <p class="project-category">Application de Cartographie de la Martinique</p>
-              </a>
-            </li>
-          </div>
+                <!-- Projet CTM -->
+                <div class="row">
+                  <li class="project-item active" data-filter-item data-category="applications"
+                    onclick="openPopup('ctm-popup')">
+                    <a href="#">
+                      <figure class="project-img">
+                        <div class="project-item-icon-box">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <img src="./assets/images/2ctm.jpeg" width="500" height="300" alt="CTM" loading="lazy">
+                      </figure>
+                      <h3 class="project-title">CTM</h3>
+                      <p class="project-category">Application de Cartographie de la Martinique</p>
+                    </a>
+                  </li>
+                </div>
 
-          <div id="ctm-popup" class="popup">
-            <!-- <div class="background">
+                <div id="ctm-popup" class="popup">
+                  <!-- <div class="background">
               <div class="stars"></div>
               <div class="twinkling"></div>
               <div class="clouds"></div>
             </div> -->
-            <div class="popup-content container d-flex justify-content-center align-items-center py-5">
-              <div class="table-responsive">
-                <span class="close-btn" onclick="closePopup('ctm-popup')">&times;</span>
-                <h2 class="text-center mb-5 display-4">CTM - Application de Cartographie de la Martinique</h2>
-                <table class="table table-bordered table-hover table-dark">
-                  <thead>
-                    <tr>
-                      <th scope="col">Titre</th>
-                      <th scope="col">Description</th>
-                      <th scope="col">Vidéo</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Test Global sans API</td>
-                      <td>Première interface de travail sans intégration d'API.</td>
-                      <td>
-                        <video controls style="width: 300px; height: auto;">
-                          <source
-                            src="./assets/videos/Odoo - Region_departement_ville_rue_ test global(sans API) premiere inteface du travail Chrome 2025-01-15.mp4"
-                            type="video/mp4">
-                          Votre navigateur ne supporte pas la balise vidéo.
-                        </video>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Test Global avec API</td>
-                      <td>Première interface de travail avec intégration d'API.</td>
-                      <td>
-                        <video controls style="width: 300px; height: auto;">
-                          <source
-                            src="./assets/videos/Odoo - Region_departement_ville_rue_ test global(avec API) premiere inteface du travail.mp4"
-                            type="video/mp4">
-                          Votre navigateur ne supporte pas la balise vidéo.
-                        </video>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Évolution du projet avec base de données</td>
-                      <td>Intégration de la base de données pour les voies.</td>
-                      <td>
-                        <video controls style="width: 300px; height: auto;">
-                          <source
-                            src="./assets/videos/Odoo - Voies - evolution du projet avec base de données 2025-01-30 10-59-56.mp4"
-                            type="video/mp4">
-                          Votre navigateur ne supporte pas la balise vidéo.
-                        </video>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Test Global avec API et codes postaux</td>
-                      <td>Ajout des données pour les codes postaux.</td>
-                      <td>
-                        <video controls style="width: 300px; height: auto;">
-                          <source
-                            src="./assets/videos/Odoo - Code Postal Region_departement_ville_rue_ test global(avec API) avec ajout des données pour les codes postaux 2025-01-27.mp4"
-                            type="video/mp4">
-                          Votre navigateur ne supporte pas la balise vidéo.
-                        </video>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Intégration de la carte en pop-up</td>
-                      <td>Test d'intégration de la carte sous forme de pop-up dans la vue Kanban.</td>
-                      <td>
-                        <video controls style="width: 300px; height: auto;">
-                          <source
-                            src="./assets/videos/Odoo - Quartier - test d'intégration de la cartes sous forme pop up dans la vue kanban 2025-01-31 11-20-09.mp4"
-                            type="video/mp4">
-                          Votre navigateur ne supporte pas la balise vidéo.
-                        </video>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                  <div class="popup-content container d-flex justify-content-center align-items-center py-5">
+                    <div class="table-responsive">
+                      <span class="close-btn" onclick="closePopup('ctm-popup')">&times;</span>
+                      <h2 class="text-center mb-5 display-4">CTM - Application de Cartographie de la Martinique</h2>
+                      <table class="table table-bordered table-hover table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col">Titre</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Vidéo</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Test Global sans API</td>
+                            <td>Première interface de travail sans intégration d'API.</td>
+                            <td>
+                              <video controls style="width: 500px; height: auto;">
+                                <source
+                                  src="./assets/videos/Odoo - Region_departement_ville_rue_ test global(sans API) premiere inteface du travail Chrome 2025-01-15.mp4"
+                                  type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                              </video>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Test Global avec API</td>
+                            <td>Première interface de travail avec intégration d'API.</td>
+                            <td>
+                              <video controls style="width: 500px; height: auto;">
+                                <source
+                                  src="./assets/videos/Odoo - Region_departement_ville_rue_ test global(avec API) premiere inteface du travail.mp4"
+                                  type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                              </video>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Évolution du projet avec base de données</td>
+                            <td>Intégration de la base de données pour les voies.</td>
+                            <td>
+                              <video controls style="width: 500px; height: auto;">
+                                <source
+                                  src="./assets/videos/Odoo - Voies - evolution du projet avec base de données 2025-01-30 10-59-56.mp4"
+                                  type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                              </video>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Test Global avec API et codes postaux</td>
+                            <td>Ajout des données pour les codes postaux.</td>
+                            <td>
+                              <video controls style="width: 500px; height: auto;">
+                                <source
+                                  src="./assets/videos/Odoo - Code Postal Region_departement_ville_rue_ test global(avec API) avec ajout des données pour les codes postaux 2025-01-27.mp4"
+                                  type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                              </video>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Intégration de la carte en pop-up</td>
+                            <td>Test d'intégration de la carte sous forme de pop-up dans la vue Kanban.</td>
+                            <td>
+                              <video controls style="width: 500px; height: auto;">
+                                <source
+                                  src="./assets/videos/Odoo - Quartier - test d'intégration de la cartes sous forme pop up dans la vue kanban 2025-01-31 11-20-09.mp4"
+                                  type="video/mp4">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                              </video>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+
+
               </div>
-            </div>
-          </div>
-
-
-
-    </div>
 
   </main>
 
