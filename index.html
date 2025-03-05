@@ -138,8 +138,7 @@
             <a href="#" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
-          </li>
-
+          </li> 
 
           <li class="social-item">
             <a href="https://www.instagram.com/tissou777/?hl=fr" class="social-link">
@@ -788,33 +787,29 @@
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-    
           <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-8 text-center">
-                <li class="project-item active" data-filter-item data-category="web development"
-                  onclick="openPopup('popup')">
-                  <a href="#">
-                    <figure class="project-img">
-                      <div class="project-item-icon-box">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </div>
-                      <img src="./assets/images/cnfpt.png" alt="CNFPT-stage" loading="lazy" width="500" height="300">
-                    </figure>
-                    <h3 class="project-title">CNFPT-stage</h3>
-                    <p class="project-category">Traitement de Base de données</p>
-                  </a>
-                </li>
-              </div>
+            <div class="row">
+              <li class="project-item active" data-filter-item data-category="web development"
+                onclick="openPopup('popup')">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/cnfpt.png" alt="CNFPT-stage" loading="lazy" width="500" height="300">
+                  </figure>
+                  <h3 class="project-title">CNFPT-stage</h3>
+                  <p class="project-category">Traitement de Base de données</p>
+                </a>
+              </li>
             </div>
 
-            <!---------------------POP UP----------------------->
+            <!---------------------POP UP----POP UP----POP UP----POP UP----POP UP----POP UP----POP UP----POP UP----------------------->
             <div id="popup" class="popup">
               <div class="popup-content">
                 <span class="close-btn" onclick="closePopup('popup')">&times;</span>
-                <h2 class="text-center">CNFPT-stage</h2>
-                <p class="text-center">Traitement de Base de données</p>
+                <h2>CNFPT-stage</h2>
+                <p>Traitement de Base de données</p>
                 <div class="text-container">
                   <p>
                     <strong>Objet :</strong> Vérification de l'âge des employés dans notre base de données
@@ -857,14 +852,18 @@
                 </div>
 
                 <!-- Espace pour la capture d'écran de la base de données -->
-                <div class="screenshot-container">
+                <div class="screenshot-container mt-4">
                   <h3>Capture d'écran de la base de données</h3>
                   <p>Voici une capture d'écran montrant les erreurs d'âge pour des agents de moins de 18 ans et de plus
                     de 68 ans :</p>
                   <img src="./assets/images/verif age.png" alt="Capture d'écran de la base de données" class="img-fluid"
                     loading="lazy">
-                  <img src="./assets/images/verif age+68.png" alt="Capture d'écran de la base de données"
-                    class="img-fluid" loading="lazy">
+
+                  <div class="screenshot-container mt-4">
+                    <img src="./assets/images/verif age+68.png" alt="Capture d'écran de la base de données"
+                      class="img-fluid" loading="lazy">
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -907,11 +906,11 @@
           </div>
 
           <div id="ctm-popup" class="popup">
-            <div class="background">
+            <!-- <div class="background">
               <div class="stars"></div>
               <div class="twinkling"></div>
               <div class="clouds"></div>
-            </div>
+            </div> -->
             <div class="popup-content container d-flex justify-content-center align-items-center py-5">
               <div class="table-responsive">
                 <span class="close-btn" onclick="closePopup('ctm-popup')">&times;</span>
