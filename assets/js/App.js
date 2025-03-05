@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/*import React, { useState } from "react";
 import "./App.css"; // Fichier CSS personnalisé
 
 const App = () => {
@@ -9,13 +9,18 @@ const App = () => {
   };
 
   return (
-    <div className="portfolio" data-page="portfolio">
+    <div className="portfolio" data-page="portfolio">*/
+    
       {/* En-tête */}
+
+      /*
       <header>
         <h2 className="h2 article-title">Portfolio</h2>
       </header>
-
+*/
       {/* Liste de filtres */}
+
+      /*
       <section className="projects">
         <ul className="filter-list">
           <li className="filter-item">
@@ -30,10 +35,11 @@ const App = () => {
           <li className="filter-item">
             <button>Web development</button>
           </li>
-        </ul>
+        </ul>*/
 
         {/* Sélecteur de catégorie */}
-        <div className="filter-select-box">
+
+        /*<div className="filter-select-box">
           <button className="filter-select">
             <div className="select-value">Select category</div>
             <div className="select-icon">
@@ -56,9 +62,11 @@ const App = () => {
             </li>
           </ul>
         </div>
-      </section>
+      </section>*/
 
       {/* Projet et bouton Mission 1 */}
+
+      /*
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-8 text-center">
@@ -86,9 +94,11 @@ const App = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>*/
 
       {/* Popup */}
+
+        /*
       {showPopup && (
         <div className="popup">
           <div className="popup-content">
@@ -103,8 +113,11 @@ const App = () => {
                 notre base de données
               </p>
               <p>
-                Bonjour, je suis EUSTACHE Mathis, stagiaire au CNFPT. {/* Ajoutez
-                plus de contenu ici */}
+                Bonjour, je suis EUSTACHE Mathis, stagiaire au CNFPT.*/
+
+                {/* Ajoutezplus de contenu ici */}
+
+                /*
               </p>
             </div>
             <div className="screenshot-container">
@@ -129,3 +142,4 @@ const App = () => {
 };
 
 export default App;
+*/
