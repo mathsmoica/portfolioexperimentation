@@ -189,3 +189,14 @@ document.addEventListener('keydown', function (event) {
   }
 }
 );
+
+const mission1Btn = document.getElementById('mission1-btn');
+const popup = document.getElementById('popup');
+
+mission1Btn.addEventListener('click', () => {
+  popup.style.display = 'flex'; // Show the popup
+});
+
+function closePopup() {
+  popup.style.display = 'none'; // Hide the popup
+}
