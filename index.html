@@ -139,7 +139,7 @@
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
-          
+
 
           <li class="social-item">
             <a href="https://www.instagram.com/tissou777/?hl=fr" class="social-link">
@@ -788,187 +788,99 @@
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>CNFPT - Stage</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-      <style>
-        /* Styles personnalisés */
-        body {
-          background-color: #f8f9fa;
-          font-family: 'Arial', sans-serif;
-        }
-    
-        .popup {
-          display: none;
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.8);
-          z-index: 1000;
-          overflow-y: auto;
-        }
-    
-        .popup-content {
-          background-color: #fff;
-          margin: 5% auto;
-          padding: 20px;
-          border-radius: 10px;
-          max-width: 800px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-    
-        .close-btn {
-          font-size: 24px;
-          cursor: pointer;
-          color: #333;
-          float: right;
-        }
-    
-        .close-btn:hover {
-          color: #000;
-        }
-    
-        .text-container {
-          margin-top: 20px;
-          line-height: 1.8;
-        }
-    
-        .screenshot-container {
-          margin-top: 30px;
-          text-align: center;
-        }
-    
-        .screenshot-container img {
-          max-width: 100%;
-          border-radius: 10px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-          margin-bottom: 20px;
-        }
-    
-        .project-item {
-          cursor: pointer;
-          transition: transform 0.3s ease;
-        }
-    
-        .project-item:hover {
-          transform: scale(1.05);
-        }
-    
-        .project-img img {
-          border-radius: 10px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-    
-        .project-title {
-          font-size: 1.5rem;
-          font-weight: bold;
-          margin-top: 10px;
-        }
-    
-        .project-category {
-          font-size: 1rem;
-          color: #666;
-        }
-      </style>
-    </head>
-    <body>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <li class="project-item active" data-filter-item data-category="web development" onclick="openPopup('popup')">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/cnfpt.png" alt="CNFPT-stage" loading="lazy" width="500" height="300">
-                </figure>
-                <h3 class="project-title">CNFPT-stage</h3>
-                <p class="project-category">Traitement de Base de données</p>
-              </a>
-            </li>
-          </div>
-        </div>
-    
-        <!---------------------POP UP----------------------->
-        <div id="popup" class="popup">
-          <div class="popup-content">
-            <span class="close-btn" onclick="closePopup('popup')">&times;</span>
-            <h2 class="text-center">CNFPT-stage</h2>
-            <p class="text-center">Traitement de Base de données</p>
-            <div class="text-container">
-              <p>
-                <strong>Objet :</strong> Vérification de l'âge des employés dans notre base de données
-              </p>
-              <p>
-                Bonjour,
-              </p>
-              <p>
-                Je me présente, je suis EUSTACHE Mathis, stagiaire en informatique au CNFPT. Dans le cadre de mes
-                fonctions, j'ai été chargé de vérifier les données des fiches agents de votre base de données. La
-                1ère opération consiste à corriger d’une part les dates de naissance des agents (ayant moins de 18
-                ans) et d’autre part de désactiver les agents qui seraient à la retraite et dont l’âge légal dépasse
-                68 ans.
-              </p>
-              <p>
-                Il est important de noter que conformément à la législation en vigueur, les personnes de 68 ans et
-                plus sont généralement considérées comme étant à la retraite (Age limite est de 67 ans et le
-                maintien en fonction jusqu’à 70 ans). Après avoir examiné votre base de données, j'ai constaté que
-                certaines personnes ont une date de naissance leur donnant 68 ans ou plus.
-              </p>
-              <p>
-                Je vous invite donc à examiner ces informations et à modifier les fiches des agents ayant moins de
-                18 ans et à désactiver les fiches des agents de plus de 68 ans, ou qui seraient déjà à la retraite.
-              </p>
-              <p>
-                <strong>Note :</strong> Ce message est un e-mail que j'ai envoyé à une collectivité pour leur
-                soumettre les erreurs détectées dans les enregistrements de l'âge de la base de données.
-              </p>
-              <p>
-                Je reste à votre disposition pour toute information complémentaire dont vous pourriez avoir besoin.
-                Je vous remercie de votre attention et de votre compréhension.
-              </p>
-              <p>
-                Cordialement,
-              </p>
-              <p>
-                EUSTACHE Mathis<br>
-                Stagiaire Informatique au CNFPT
-              </p>
+
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-8 text-center">
+                <li class="project-item active" data-filter-item data-category="web development"
+                  onclick="openPopup('popup')">
+                  <a href="#">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                      <img src="./assets/images/cnfpt.png" alt="CNFPT-stage" loading="lazy" width="500" height="300">
+                    </figure>
+                    <h3 class="project-title">CNFPT-stage</h3>
+                    <p class="project-category">Traitement de Base de données</p>
+                  </a>
+                </li>
+              </div>
             </div>
-    
-            <!-- Espace pour la capture d'écran de la base de données -->
-            <div class="screenshot-container">
-              <h3>Capture d'écran de la base de données</h3>
-              <p>Voici une capture d'écran montrant les erreurs d'âge pour des agents de moins de 18 ans et de plus
-                de 68 ans :</p>
-              <img src="./assets/images/verif age.png" alt="Capture d'écran de la base de données" class="img-fluid"
-                loading="lazy">
-              <img src="./assets/images/verif age+68.png" alt="Capture d'écran de la base de données" class="img-fluid"
-                loading="lazy">
+
+            <!---------------------POP UP----------------------->
+            <div id="popup" class="popup">
+              <div class="popup-content">
+                <span class="close-btn" onclick="closePopup('popup')">&times;</span>
+                <h2 class="text-center">CNFPT-stage</h2>
+                <p class="text-center">Traitement de Base de données</p>
+                <div class="text-container">
+                  <p>
+                    <strong>Objet :</strong> Vérification de l'âge des employés dans notre base de données
+                  </p>
+                  <p>
+                    Bonjour,
+                  </p>
+                  <p>
+                    Je me présente, je suis EUSTACHE Mathis, stagiaire en informatique au CNFPT. Dans le cadre de mes
+                    fonctions, j'ai été chargé de vérifier les données des fiches agents de votre base de données. La
+                    1ère opération consiste à corriger d’une part les dates de naissance des agents (ayant moins de 18
+                    ans) et d’autre part de désactiver les agents qui seraient à la retraite et dont l’âge légal dépasse
+                    68 ans.
+                  </p>
+                  <p>
+                    Il est important de noter que conformément à la législation en vigueur, les personnes de 68 ans et
+                    plus sont généralement considérées comme étant à la retraite (Age limite est de 67 ans et le
+                    maintien en fonction jusqu’à 70 ans). Après avoir examiné votre base de données, j'ai constaté que
+                    certaines personnes ont une date de naissance leur donnant 68 ans ou plus.
+                  </p>
+                  <p>
+                    Je vous invite donc à examiner ces informations et à modifier les fiches des agents ayant moins de
+                    18 ans et à désactiver les fiches des agents de plus de 68 ans, ou qui seraient déjà à la retraite.
+                  </p>
+                  <p>
+                    <strong>Note :</strong> Ce message est un e-mail que j'ai envoyé à une collectivité pour leur
+                    soumettre les erreurs détectées dans les enregistrements de l'âge de la base de données.
+                  </p>
+                  <p>
+                    Je reste à votre disposition pour toute information complémentaire dont vous pourriez avoir besoin.
+                    Je vous remercie de votre attention et de votre compréhension.
+                  </p>
+                  <p>
+                    Cordialement,
+                  </p>
+                  <p>
+                    EUSTACHE Mathis<br>
+                    Stagiaire Informatique au CNFPT
+                  </p>
+                </div>
+
+                <!-- Espace pour la capture d'écran de la base de données -->
+                <div class="screenshot-container">
+                  <h3>Capture d'écran de la base de données</h3>
+                  <p>Voici une capture d'écran montrant les erreurs d'âge pour des agents de moins de 18 ans et de plus
+                    de 68 ans :</p>
+                  <img src="./assets/images/verif age.png" alt="Capture d'écran de la base de données" class="img-fluid"
+                    loading="lazy">
+                  <img src="./assets/images/verif age+68.png" alt="Capture d'écran de la base de données"
+                    class="img-fluid" loading="lazy">
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    
-      <script>
-        // Fonctions pour ouvrir et fermer la pop-up
-        function openPopup(id) {
-          document.getElementById(id).style.display = "block";
-        }
-    
-        function closePopup(id) {
-          document.getElementById(id).style.display = "none";
-        }
-      </script>
-    </body>
-    </html>
+
+          <script>
+            // Fonctions pour ouvrir et fermer la pop-up
+            function openPopup(id) {
+              document.getElementById(id).style.display = "block";
+            }
+
+            function closePopup(id) {
+              document.getElementById(id).style.display = "none";
+            }
+          </script>
+
 
           <!-- <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
