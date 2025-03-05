@@ -786,40 +786,69 @@
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-          <div class="container">
-            <div class="row">
-              <li class="project-item active" data-filter-item data-category="web development"
-                onclick="openPopup('popup')">
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img src="./assets/images/cnfpt.png" alt="CNFPT-stage" loading="lazy" width="500" height="300">
-                  </figure>
-                  <h3 class="project-title">CNFPT-stage</h3>
-                  <p class="project-category">Traitement de Base de données</p>
-                </a>
-              </li>
-            </div>
-            <!---------------------POP UP----POP UP----POP UP----POP UP----POP UP----POP UP----POP UP----POP UP----------------------->
-            <div id="popup" class="popup">
-              <div class="popup-content">
-                <span class="close-btn" onclick="closePopup('popup')">&times;</span>
-                <h2>CNFPT-stage</h2>
-                <p>Traitement de Base de données</p>
-                <div class="video-container">
-                  <video controls>
-                    <source src="./assets/videos/stage-video1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                  <video controls>
-                    <source src="./assets/videos/stage-video2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
+    <div class="container">
+      <div class="row">
+        <li class="project-item active" data-filter-item data-category="web development" onclick="openPopup('popup')">
+          <a href="#">
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
               </div>
-            </div>
+              <img src="./assets/images/cnfpt.png" alt="CNFPT-stage" loading="lazy" width="500" height="300">
+            </figure>
+            <h3 class="project-title">CNFPT-stage</h3>
+            <p class="project-category">Traitement de Base de données</p>
+          </a>
+        </li>
+      </div>
+    
+      <!---------------------POP UP----POP UP----POP UP----POP UP----POP UP----POP UP----POP UP----POP UP----------------------->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closePopup('popup')">&times;</span>
+          <h2>CNFPT-stage</h2>
+          <p>Traitement de Base de données</p>
+          <div class="text-container">
+            <p>
+              <strong>Objet :</strong> Vérification de l'âge des employés dans notre base de données
+            </p>
+            <p>
+              Bonjour,
+            </p>
+            <p>
+              Je me présente, je suis EUSTACHE Mathis, stagiaire en informatique au CNFPT. Dans le cadre de mes fonctions, j'ai été chargé de vérifier les données des fiches agents de votre base de données. La 1ère opération consiste à corriger d’une part les dates de naissance des agents (ayant moins de 18 ans) et d’autre part de désactiver les agents qui seraient à la retraite et dont l’âge légal dépasse 68 ans.
+            </p>
+            <p>
+              Il est important de noter que conformément à la législation en vigueur, les personnes de 68 ans et plus sont généralement considérées comme étant à la retraite (Age limite est de 67 ans et le maintien en fonction jusqu’à 70 ans). Après avoir examiné votre base de données, j'ai constaté que certaines personnes ont une date de naissance leur donnant 68 ans ou plus.
+            </p>
+            <p>
+              Je vous invite donc à examiner ces informations et à modifier les fiches des agents ayant moins de 18 ans et à désactiver les fiches des agents de plus de 68 ans, ou qui seraient déjà à la retraite.
+            </p>
+            <p>
+              <strong>Note :</strong> Ce message est un e-mail que j'ai envoyé à une collectivité pour leur soumettre les erreurs détectées dans les enregistrements de l'âge de la base de données.
+            </p>
+            <p>
+              Je reste à votre disposition pour toute information complémentaire dont vous pourriez avoir besoin. Je vous remercie de votre attention et de votre compréhension.
+            </p>
+            <p>
+              Cordialement,
+            </p>
+            <p>
+              EUSTACHE Mathis<br>
+              Stagiaire Informatique au CNFPT
+            </p>
+          </div>
+    
+          <!-- Espace pour la capture d'écran de la base de données -->
+          <div class="screenshot-container mt-4">
+            <h3>Capture d'écran de la base de données</h3>
+            <p>Voici une capture d'écran montrant les erreurs d'âge pour des agents de moins de 18 ans et de plus de 68 ans :</p>
+            <img src="./assets/images/verif age.png" alt="Capture d'écran de la base de données" class="img-fluid" loading="lazy">
+            <img src="./assets/images/verif age+68.png" alt="Capture d'écran de la base de données" class="img-fluid" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
 
 
             <!-- <li class="project-item  active" data-filter-item data-category="web development">
