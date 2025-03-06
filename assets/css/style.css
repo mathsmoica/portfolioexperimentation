@@ -1948,7 +1948,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   background: rgba(255, 255, 255, 0.1); /* Ajout d'une légère transparence */
   backdrop-filter: blur(10px); /* Effet de flou */
   border: 2px solid rgba(255, 255, 255, 0.5); /* Bordure subtile */
-  color: rgba(30, 21, 2, 0.826); /* Texte en blanc */
+  color: rgb(255, 255, 255); /* Texte en blanc */
 }
 
 .close-btn {
@@ -2048,7 +2048,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   display: none; /* Masqué par défaut */
   padding: 20px;
   background-color: #000000;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #000000;
 }
 
 .mission-details.active {
