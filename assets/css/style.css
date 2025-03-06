@@ -1948,7 +1948,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   background: rgba(255, 255, 255, 0.1); /* Ajout d'une légère transparence */
   backdrop-filter: blur(10px); /* Effet de flou */
   border: 2px solid rgba(255, 255, 255, 0.5); /* Bordure subtile */
-  color: white; /* Texte en blanc */
+  color: rgba(30, 21, 2, 0.826); /* Texte en blanc */
 }
 
 .close-btn {
