@@ -2047,7 +2047,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .mission-details {
   display: none; /* Masqué par défaut */
   padding: 20px;
-  background-color: #fff;
+  background-color: #000000;
   border-top: 1px solid #ddd;
 }
 
