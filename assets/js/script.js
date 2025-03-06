@@ -174,19 +174,24 @@ function closePopup(popupId) {
 document.addEventListener('click', function (event) {
   const popups = document.querySelectorAll('.popup');
   popups.forEach(popup => {
-      if (event.target === popup) {
-          popup.style.display = 'none';
-      }
+    if (event.target === popup) {
+      popup.style.display = 'none';
+    }
   });
 });
 
 document.addEventListener('keydown', function (event) {
   if (event.key === 'Escape') {
-      const popups = document.querySelectorAll('.popup');
-      popups.forEach(popup => {
-          popup.style.display = 'none';
-      });
+    const popups = document.querySelectorAll('.popup');
+    popups.forEach(popup => {
+      popup.style.display = 'none';
+    });
   }
 }
 );
 
+// Fonction pour afficher/masquer les détails de la mission
+function toggleDetails(id) {
+  const details = document.getElementById(id);
+  details.classList.toggle('active');
+}
