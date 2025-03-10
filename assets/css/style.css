@@ -2054,3 +2054,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 .mission-details.active {
   display: block; /* Affiché lorsque la carte est cliquée */
 }
+
+.certification-image {
+  width: 100px; /* Taille fixe pour la largeur */
+  height: 100px; /* Taille fixe pour la hauteur */
+  object-fit: contain; /* Garde le ratio de l'image sans la déformer */
+}
+
+
