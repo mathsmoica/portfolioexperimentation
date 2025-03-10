@@ -2061,4 +2061,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   object-fit: contain; /* Garde le ratio de l'image sans la déformer */
 }
 
+a {
+  color: rgb(236, 236, 255); /* Couleur normale des liens */
+  text-decoration: none;
+}
 
