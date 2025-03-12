@@ -176,15 +176,15 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>Stage</button>
           </li>
 
-          <li class="navbar-item">
+          <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
+          </li> -->
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>Certification</button>
           </li>
 
           <!-- <li class="navbar-item">
@@ -203,7 +203,7 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About Me</h2>
@@ -253,8 +253,9 @@
 
                 <p class="service-item-text">
                   Conception et développement de sites web modernes et réactifs en utilisant des technologies comme
-                  HTML, CSS, JavaScript et PHP. Une attention particulière est portée à l'optimisation des performances et à l'expérience utilisateur pour 
-                  garantir des sites rapides et intuitifs. 
+                  HTML, CSS, JavaScript et PHP. Une attention particulière est portée à l'optimisation des performances
+                  et à l'expérience utilisateur pour
+                  garantir des sites rapides et intuitifs.
                 </p>
               </div>
 
@@ -312,6 +313,44 @@
               </div>
 
             </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/draw.png" alt="network icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Architecture Réseau</h4>
+
+                <p class="service-item-text">
+                  Conception et organisation d'architectures réseau pour optimiser les systèmes d'information.
+                  incluant l'interconnexion des serveurs et postes clients pour une communication fluide et sécurisée.
+
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/time-management.png" alt="network icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Administration de Système d'Information</h4>
+
+                <p class="service-item-text">
+                  Gestion et optimisation des systèmes d'information grâce à l'outil GLPI.
+                  Supervision des ressources informatiques, gestion des incidents, et suivi des actifs pour une
+                  administration centralisée et efficace.
+                </p>
+              </div>
+
+            </li>
+
 
           </ul>
 
@@ -532,7 +571,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="stage">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -547,16 +586,16 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Stage CNFPT</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Stage CTM</button>
             </li>
 
-            <li class="filter-item">
+            <!-- <li class="filter-item">
               <button data-filter-btn>Web development</button>
-            </li>
+            </li> -->
 
           </ul>
 
@@ -579,16 +618,16 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Stage CNFPT</button>
               </li>
 
               <li class="select-item">
+                <button data-select-item>Stage CTM</button>
+              </li>
+
+              <!-- <li class="select-item">
                 <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
+              </li> -->
 
             </ul>
 
@@ -596,8 +635,7 @@
 
           <div class="container">
             <div class="row">
-              <li class="project-item active" data-filter-item data-category="web development"
-                onclick="openPopup('popup')">
+              <li class="project-item active" data-filter-item data-category="Stage CNFPT" onclick="openPopup('popup')">
                 <a href="#">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
@@ -965,7 +1003,7 @@
             <!-- Projet CTM -->
             <div class="container">
               <div class="row">
-                <li class="project-item active" data-filter-item data-category="applications"
+                <li class="project-item active" data-filter-item data-category="Stage CTM"
                   onclick="openPopup('ctm-popup')">
                   <a href="#">
                     <figure class="project-img">
@@ -1113,9 +1151,13 @@
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    ___
-                    Benjamin TINAUGUS
-                    ___
+                    "Monsieur EUSTACHE a fait preuve d'une grande autonomie, d'une curiosité intellectuelle et de
+                    solides compétences techniques tout au long de son stage. Son travail a été déterminant pour la
+                    réussite
+                    du projet de cartographie, et ses propositions innovantes ont été très appréciées. Je recommande
+                    vivement Monsieur EUSTACHE
+                    pour ses qualités professionnelles et sa capacité à s'adapter à des environnements techniques
+                    complexes."
                   </p>
                 </div>
 
@@ -1201,7 +1243,7 @@
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="blog" data-page="certification">
 
         <header>
           <h2 class="h2 article-title">Certification</h2>
@@ -1216,7 +1258,8 @@
                   <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/MathisEustache-4964/WZC8RQCN?sharingId=C2CC8086E11AE475"
                     target="_blank">
                     <figure class="certification-banner-box text-center">
-                      <img src="./assets/images/generic-badge.svg" alt="Certification Microsoft 1" loading="lazy" class="certification-image">
+                      <img src="./assets/images/generic-badge.svg" alt="Certification Microsoft 1" loading="lazy"
+                        class="certification-image">
                     </figure>
                     <div class="certification-content">
                       <div class="certification-meta">
@@ -1232,14 +1275,15 @@
               </div>
               <br>
               <br>
-          
+
               <!-- Certification Microsoft 2 -->
               <div class="col-md-3 col-sm-6 col-12">
                 <div class="p-3 border bg-light">
                   <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/MathisEustache-4964/3RLK4VPH?sharingId=C2CC8086E11AE475"
                     target="_blank">
                     <figure class="certification-banner-box text-center">
-                      <img src="./assets/images/get-started-ai-fundamentals.svg" alt="Certification Microsoft 2" loading="lazy" class="certification-image">
+                      <img src="./assets/images/get-started-ai-fundamentals.svg" alt="Certification Microsoft 2"
+                        loading="lazy" class="certification-image">
                     </figure>
                     <div class="certification-content">
                       <div class="certification-meta">
@@ -1255,13 +1299,14 @@
               </div>
               <br>
               <br>
-          
+
               <!-- Certification PIX -->
               <div class="col-md-3 col-sm-6 col-12">
                 <div class="p-3 border bg-light">
                   <a href="#">
                     <figure class="certification-banner-box text-center">
-                      <img src="./assets/images/pix-logo.svg" alt="Certification PIX" loading="lazy" class="certification-image">
+                      <img src="./assets/images/pix-logo.svg" alt="Certification PIX" loading="lazy"
+                        class="certification-image">
                     </figure>
                     <div class="certification-content">
                       <div class="certification-meta">
@@ -1275,7 +1320,8 @@
                   </a>
                   <!-- Affichage du PDF PIX -->
                   <div class="pdf-viewer mt-3">
-                    <iframe src="./assets/pdf/attestation-pix-20250211.pdf" width="100%" height="200px" style="border: none;">
+                    <iframe src="./assets/pdf/attestation-pix-20250211.pdf" width="100%" height="200px"
+                      style="border: none;">
                       Votre navigateur ne supporte pas l'affichage de PDF. Vous pouvez <a
                         href="./assets/pdf/attestation-pix-20250211.pdf">télécharger le fichier</a>.
                     </iframe>
@@ -1284,13 +1330,14 @@
               </div>
               <br>
               <br>
-          
+
               <!-- Certification Java -->
               <div class="col-md-3 col-sm-6 col-12">
                 <div class="p-3 border bg-light">
                   <a href="#">
                     <figure class="certification-banner-box text-center">
-                      <img src="./assets/images/OIP.jpeg" alt="Certification Java" loading="lazy" class="certification-image">
+                      <img src="./assets/images/OIP.jpeg" alt="Certification Java" loading="lazy"
+                        class="certification-image">
                     </figure>
                     <div class="certification-content">
                       <div class="certification-meta">
@@ -1303,13 +1350,13 @@
                     </div>
                   </a>
                   <!-- Affichage du PDF Java -->
-                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </article>
+    </div>
+    </section>
+    </article>
 
 
 
