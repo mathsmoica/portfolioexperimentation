@@ -190,8 +190,8 @@ document.addEventListener('keydown', function (event) {
 }
 );
 
-// Fonction pour afficher/masquer les détails de la mission
-function toggleDetails(id) {
-  const details = document.getElementById(id);
-  details.classList.toggle('active');
-}
+// // Fonction pour afficher/masquer les détails de la mission
+// function toggleDetails(id) {
+//   const details = document.getElementById(id);
+//   details.classList.toggle('active');
+// }
