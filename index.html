@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,7 +43,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/espadon.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/espadon.png" alt="Mathis" width="80">
         </figure>
 
         <div class="info-content">
@@ -636,7 +635,7 @@
 
           <div class="container">
             <div class="row">
-              <li class="project-item active" data-filter-item data-category="Stage CNFPT" onclick="openPopup('popup')">
+              <li class="project-item active" data-filter-item data-category="Stage CNFPT">
                 <a href="#">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
@@ -650,327 +649,167 @@
               </li>
             </div>
 
-            <!---------------------POP UP----POP UP----POP UP----POP UP----POP UP----POP UP----POP UP----POP UP----------------------->
-            <div id="popup" class="popup">
-              <div class="popup-content">
-                <span class="close-btn" onclick="closePopup('popup')">&times;</span>
-                <h2>CNFPT-stage</h2>
-                <p>Traitement de Base de données</p>
-                <div class="container my-5">
-                  <h1 class="text-center mb-5">Mes Missions au CNFPT</h1>
-                  <div class="row">
-                    <!-- Carte pour la mission 1 : Vérification de l'âge -->
-                    <div class="col-md-4 mb-4">
-                      <div class="mission-card" onclick="toggleDetails('mission1')">
-                        <img src="./assets/images/CNFPT-stage.png" alt="Vérification de l'âge" loading="lazy">
-                        <div class="card-body">
-                          <h3 class="card-title">Vérification de l'âge</h3>
-                          <p class="card-text">Traitement des erreurs d'âge dans la base de données</p>
-                        </div>
-                        <!-- Détails de la mission -->
-                        <div id="mission1" class="mission-details">
-                          <div class="text-container">
-                            <p>
-                              <strong>Objet :</strong> Vérification de l'âge des employés dans notre base de données
-                            </p>
-                            <p>
-                              Bonjour,
-                            </p>
-                            <p>
-                              Je me présente, je suis EUSTACHE Mathis, stagiaire en informatique au CNFPT. Dans le cadre
-                              de mes
-                              fonctions, j'ai été chargé de vérifier les données des fiches agents de votre base de
-                              données. La
-                              1ère opération consiste à corriger d’une part les dates de naissance des agents (ayant
-                              moins de 18
-                              ans) et d’autre part de désactiver les agents qui seraient à la retraite et dont l’âge
-                              légal dépasse
-                              68 ans.
-                            </p>
-                            <p>
-                              Il est important de noter que conformément à la législation en vigueur, les personnes de
-                              68 ans et
-                              plus sont généralement considérées comme étant à la retraite (Age limite est de 67 ans et
-                              le
-                              maintien en fonction jusqu’à 70 ans). Après avoir examiné votre base de données, j'ai
-                              constaté que
-                              certaines personnes ont une date de naissance leur donnant 68 ans ou plus.
-                            </p>
-                            <p>
-                              Je vous invite donc à examiner ces informations et à modifier les fiches des agents ayant
-                              moins de
-                              18 ans et à désactiver les fiches des agents de plus de 68 ans, ou qui seraient déjà à la
-                              retraite.
-                            </p>
-                            <p>
-                              <strong>Note :</strong> Ce message est un e-mail que j'ai envoyé à une collectivité pour
-                              leur
-                              soumettre les erreurs détectées dans les enregistrements de l'âge de la base de données.
-                            </p>
-                            <p>
-                              Je reste à votre disposition pour toute information complémentaire dont vous pourriez
-                              avoir besoin.
-                              Je vous remercie de votre attention et de votre compréhension.
-                            </p>
-                            <p>
-                              Cordialement,
-                            </p>
-                            <p>
-                              EUSTACHE Mathis<br>
-                              Stagiaire Informatique au CNFPT
-                            </p>
-                          </div>
+            <!---------------------Sections déroulantes----------------------->
+            <div class="mission-container">
+              <!-- Mission 1 : Vérification de l'âge -->
+              <details class="mission-card">
+                <summary>
+                  <img src="./assets/images/CNFPT-stage.png" alt="Vérification de l'âge" loading="lazy">
+                  <div class="card-body">
+                    <h3 class="card-title">Vérification de l'âge</h3>
+                    <p class="card-text">Traitement des erreurs d'âge dans la base de données</p>
+                  </div>
+                </summary>
+                <div class="mission-details">
+                  <div class="text-container">
+                    <p>
+                      <strong>Objet :</strong> Vérification de l'âge des employés dans notre base de données
+                    </p>
+                    <p>
+                      Bonjour,
+                    </p>
+                    <p>
+                      Je me présente, je suis EUSTACHE Mathis, stagiaire en informatique au CNFPT. Dans le cadre de mes
+                      fonctions, j'ai été chargé de vérifier les données des fiches agents de votre base de données. La
+                      1ère opération consiste à corriger d’une part les dates de naissance des agents (ayant moins de 18
+                      ans) et d’autre part de désactiver les agents qui seraient à la retraite et dont l’âge légal
+                      dépasse
+                      68 ans.
+                    </p>
+                    <p>
+                      Il est important de noter que conformément à la législation en vigueur, les personnes de 68 ans et
+                      plus sont généralement considérées comme étant à la retraite (Age limite est de 67 ans et le
+                      maintien en fonction jusqu’à 70 ans). Après avoir examiné votre base de données, j'ai constaté que
+                      certaines personnes ont une date de naissance leur donnant 68 ans ou plus.
+                    </p>
+                    <p>
+                      Je vous invite donc à examiner ces informations et à modifier les fiches des agents ayant moins de
+                      18 ans et à désactiver les fiches des agents de plus de 68 ans, ou qui seraient déjà à la
+                      retraite.
+                    </p>
+                    <p>
+                      <strong>Note :</strong> Ce message est un e-mail que j'ai envoyé à une collectivité pour leur
+                      soumettre les erreurs détectées dans les enregistrements de l'âge de la base de données.
+                    </p>
+                    <p>
+                      Je reste à votre disposition pour toute information complémentaire dont vous pourriez avoir
+                      besoin.
+                      Je vous remercie de votre attention et de votre compréhension.
+                    </p>
+                    <p>
+                      Cordialement,
+                    </p>
+                    <p>
+                      EUSTACHE Mathis<br>
+                      Stagiaire Informatique au CNFPT
+                    </p>
+                  </div>
 
-                          <!-- Espace pour la capture d'écran de la base de données -->
-                          <div class="screenshot-container mt-4">
-                            <h3>Capture d'écran de la base de données</h3>
-                            <p>Voici une capture d'écran montrant les erreurs d'âge pour des agents de moins de 18 ans
-                              et de plus
-                              de 68 ans :</p>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="card">
-                                  <img src="./assets/images/verif age.png" alt="Capture d'écran - Moins de 18 ans"
-                                    class="card-img-top img-fluid" loading="lazy">
-                                  <div class="card-body">
-                                    <p class="card-text text-center">Agents de moins de 18 ans</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-md-6">
-                                <div class="card">
-                                  <img src="./assets/images/verif age+68.png" alt="Capture d'écran - Plus de 68 ans"
-                                    class="card-img-top img-fluid" loading="lazy">
-                                  <div class="card-body">
-                                    <p class="card-text text-center">Agents de plus de 68 ans</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                  <!-- Capture d'écran de la base de données -->
+                  <div class="screenshot-container mt-4">
+                    <h3>Capture d'écran de la base de données</h3>
+                    <p>Voici une capture d'écran montrant les erreurs d'âge pour des agents de moins de 18 ans et de
+                      plus
+                      de 68 ans :</p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card">
+                          <img src="./assets/images/verif age.png" alt="Capture d'écran - Moins de 18 ans"
+                            class="card-img-top img-fluid" loading="lazy">
+                          <div class="card-body">
+                            <p class="card-text text-center">Agents de moins de 18 ans</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card">
+                          <img src="./assets/images/verif age+68.png" alt="Capture d'écran - Plus de 68 ans"
+                            class="card-img-top img-fluid" loading="lazy">
+                          <div class="card-body">
+                            <p class="card-text text-center">Agents de plus de 68 ans</p>
                           </div>
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </details>
 
+              <!-- Mission 2 : Doublons de mails -->
+              <details class="mission-card">
+                <summary>
+                  <img src="./assets/images/th.jpeg" alt="Doublons de mails" loading="lazy">
+                  <div class="card-body">
+                    <h3 class="card-title">Doublons de mails</h3>
+                    <p class="card-text">Vérification des adresses e-mail en doublon</p>
+                  </div>
+                </summary>
+                <div class="mission-details">
+                  <div class="text-container">
+                    <p>
+                      <strong>Objet :</strong> Vérification de mail d’agents en doublon dans la collectivité
+                    </p>
+                    <p>
+                      Bonjour,
+                    </p>
+                    <p>
+                      Je me présente, je suis EUSTACHE Mathis, stagiaire à la CNFPT. Dans le cadre de mes fonctions,
+                      j'ai
+                      été chargé de la tâche de vérifier les données de notre base de données concernant les adresses
+                      e-mail
+                      de vos agents.
+                    </p>
+                    <p>
+                      Après un examen approfondi, j’ai constaté que plusieurs agents partagent la même adresse e-mail.
+                      Cela pose un problème car ces agents ne peuvent pas recevoir individuellement les informations
+                      concernant les formations.
+                    </p>
+                    <p>
+                      Il est essentiel que chaque agent dispose d’une adresse e-mail unique pour garantir une
+                      communication
+                      efficace. Je vous invite donc à vérifier ces informations et à prendre les mesures nécessaires
+                      pour
+                      rectifier cette situation.
+                    </p>
+                    <p>
+                      Je vous invite donc à jeter un coup d'œil à ces informations et à prendre les mesures nécessaires
+                      pour rectifier cette situation si nécessaire.
+                    </p>
+                    <p>
+                      Je reste à votre disposition pour toute information complémentaire dont vous pourriez avoir
+                      besoin.
+                      Je vous remercie de votre attention et de votre compréhension.
+                    </p>
+                    <p>
+                      Cordialement,
+                    </p>
+                    <p>
+                      EUSTACHE Mathis<br>
+                      Stagiaire à la CNFPT
+                    </p>
+                  </div>
 
-                    <!-- Carte pour la mission 2 : Doublons de mails -->
-                    <div class="col-md-4 mb-4">
-                      <div class="mission-card" onclick="toggleDetails('mission2')">
-                        <img src="./assets/images/th.jpeg" alt="Doublons de mails" loading="lazy">
-                        <div class="card-body">
-                          <h3 class="card-title">Doublons de mails</h3>
-                          <p class="card-text">Vérification des adresses e-mail en doublon</p>
-                        </div>
-                        <!-- Détails de la mission -->
-                        <div id="mission2" class="mission-details">
-                          <div class="text-container">
-                            <p>
-                              <strong>Objet :</strong> Vérification de mail d’agents en doublon dans la collectivité
-                            </p>
-                            <p>
-                              Bonjour,
-                            </p>
-                            <p>
-                              Je me présente, je suis EUSTACHE Mathis, stagiaire à la CNFPT. Dans le cadre de mes
-                              fonctions, j'ai
-                              été chargé de la tâche de vérifier les données de notre base de données concernant les
-                              adresses e-mail
-                              de vos agents.
-                            </p>
-                            <p>
-                              Après un examen approfondi, j’ai constaté que plusieurs agents partagent la même adresse
-                              e-mail.
-                              Cela pose un problème car ces agents ne peuvent pas recevoir individuellement les
-                              informations
-                              concernant les formations.
-                            </p>
-                            <p>
-                              Il est essentiel que chaque agent dispose d’une adresse e-mail unique pour garantir une
-                              communication
-                              efficace. Je vous invite donc à vérifier ces informations et à prendre les mesures
-                              nécessaires pour
-                              rectifier cette situation.
-                            </p>
-                            <p>
-                              Je vous invite donc à jeter un coup d'œil à ces informations et à prendre les mesures
-                              nécessaires
-                              pour rectifier cette situation si nécessaire.
-                            </p>
-                            <p>
-                              Je reste à votre disposition pour toute information complémentaire dont vous pourriez
-                              avoir besoin.
-                              Je vous remercie de votre attention et de votre compréhension.
-                            </p>
-                            <p>
-                              Cordialement,
-                            </p>
-                            <p>
-                              EUSTACHE Mathis<br>
-                              Stagiaire à la CNFPT
-                            </p>
-                          </div>
-
-                          <!-- Espace pour la capture d'écran de la base de données -->
-                          <div class="screenshot-container mt-4">
-                            <h3>Capture d'écran de la base de données</h3>
-                            <p>Voici une capture d'écran montrant les doublons d'adresses e-mail :</p>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="card">
-                                  <img src="./assets/images/doublon.png" alt="Capture d'écran - Doublons de mails"
-                                    class="card-img-top img-fluid" style="width: 100%; height: auto;" loading="lazy">
-                                  <div class="card-body">
-                                    <p class="card-text text-center">Doublons d'adresses e-mail</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="card">
-                                    <img src="./assets/images/doublon.1.png" alt="Capture d'écran - Doublons de mails"
-                                      class="card-img-top img-fluid" style="width: 100%; height: auto;" loading="lazy">
-                                    <div class="card-body">
-                                      <p class="card-text text-center">Doublons d'adresses e-mail</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                  <!-- Capture d'écran de la base de données -->
+                  <div class="screenshot-container mt-4">
+                    <h3>Capture d'écran de la base de données</h3>
+                    <p>Voici une capture d'écran montrant les doublons d'adresses e-mail :</p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card">
+                          <img src="./assets/images/doublon.png" alt="Capture d'écran - Doublons de mails"
+                            class="card-img-top img-fluid" style="width: 100%; height: auto;" loading="lazy">
+                          <div class="card-body">
+                            <p class="card-text text-center">Doublons d'adresses e-mail</p>
                           </div>
                         </div>
                       </div>
-
-
-                      <!-- Carte pour la mission 3 : Analyse des performances -->
-                      <div class="col-md-4 mb-4">
-                        <div class="mission-card" onclick="toggleDetails('mission3')">
-                          <img src="./assets/images/testt.jpeg" alt="Analyse des performances" loading="lazy">
-                          <div class="card-body">
-                            <h3 class="card-title">Mail erroné RH</h3>
-                            <p class="card-text">Vérification des mails erronés des responsables hiérarchiques</p>
-                          </div>
-                          <!-- Détails de la mission -->
-                          <div id="missionMailErrone" class="mission-details">
-                            <div class="text-container">
-                              <p>
-                                <strong>Objet :</strong> CACEM - Vérification des mails erronés des responsables
-                                hiérarchiques de votre collectivité sur les fiches agents suivantes
-                              </p>
-                              <p>
-                                Bonjour,
-                              </p>
-                              <p>
-                                Je suis EUSTACHE Mathis, stagiaire à la CNFPT. Dans le cadre de mes fonctions, j’ai été
-                                chargé de l’analyse des données de notre base de données, en particulier les adresses
-                                e-mail de vos responsables hiérarchiques.
-                              </p>
-                              <p>
-                                J’ai constaté que certaines de ces adresses e-mail semblent comporter des erreurs ou ne
-                                pas être valides. Cela peut poser un problème car si l’adresse e-mail est incorrecte,
-                                les responsables hiérarchiques ne seront pas en mesure de recevoir les informations
-                                concernant la formation.
-                              </p>
-                              <p>
-                                Il est donc crucial de vérifier ces adresses e-mail et de prendre les mesures
-                                nécessaires pour rectifier cette situation. Je vous invite à examiner ces informations
-                                pour corriger si une erreur est effectivement constatée.
-                              </p>
-                              <p>
-                                Je reste à votre disposition pour toute information complémentaire dont vous pourriez
-                                avoir besoin. Je vous remercie de votre attention et de votre compréhension.
-                              </p>
-                              <p>
-                                Cordialement,
-                              </p>
-                              <p>
-                                EUSTACHE Mathis<br>
-                                Stagiaire à la CNFPT
-                              </p>
-                            </div>
-
-                            <!-- Espace pour la capture d'écran de la base de données -->
-                            <div class="screenshot-container mt-4">
-                              <h3>Capture d'écran de la base de données</h3>
-                              <p>Voici une capture d'écran montrant les mails erronés des responsables hiérarchiques :
-                              </p>
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="card">
-                                    <img src="./assets/images/mail-error.png" alt="Capture d'écran - Mails erronés RH"
-                                      class="card-img-top img-fluid" style="width: 100%; height: auto;" loading="lazy">
-                                    <div class="card-body">
-                                      <p class="card-text text-center">Mails erronés des responsables hiérarchiques</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Ajoutez d'autres cartes pour d'autres missions -->
-                      <!-- Carte pour la mission : Champs non renseignés -->
-                      <div class="col-md-4 mb-4">
-                        <div class="mission-card" onclick="toggleDetails('missionChampsVides')">
-                          <img src="./assets/images/une base de données incohérente avec des trous.png"
-                            alt="Champs non renseignés" loading="lazy">
-                          <div class="card-body">
-                            <h3 class="card-title">Champs non renseignés</h3>
-                            <p class="card-text">Vérification des champs manquants</p>
-                          </div>
-                          <!-- Détails de la mission -->
-                          <div id="missionChampsVides" class="mission-details">
-                            <div class="text-container">
-                              <p>
-                                <strong>Objet :</strong> CACEM - Vérification des champs non renseignés
-                              </p>
-                              <p>
-                                Bonjour,
-                              </p>
-                              <p>
-                                Je suis EUSTACHE Mathis, stagiaire à la CNFPT. Dans le cadre de mes fonctions, j’ai été
-                                chargé de l’analyse des données de notre base de données.
-                              </p>
-                              <p>
-                                J’ai constaté que certains champs obligatoires ne sont pas renseignés, comme le champ
-                                "employe_fonction". Cela peut poser un problème pour la gestion des agents.
-                              </p>
-                              <p>
-                                Il est donc crucial de vérifier ces informations et de prendre les mesures nécessaires
-                                pour rectifier cette situation. Je vous invite à examiner ces données pour corriger si
-                                une erreur est effectivement constatée.
-                              </p>
-                              <p>
-                                Je reste à votre disposition pour toute information complémentaire dont vous pourriez
-                                avoir besoin. Je vous remercie de votre attention et de votre compréhension.
-                              </p>
-                              <p>
-                                Cordialement,
-                              </p>
-                              <p>
-                                EUSTACHE Mathis<br>
-                                Stagiaire à la CNFPT
-                              </p>
-                            </div>
-
-                            <!-- Espace pour la capture d'écran de la base de données -->
-                            <div class="screenshot-container mt-4">
-                              <h3>Capture d'écran de la base de données</h3>
-                              <p>Voici une capture d'écran montrant les champs non renseignés :</p>
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="card">
-                                    <img src="./assets/images/une image illisible.png"
-                                      alt="Capture d'écran - Champs non renseignés" class="card-img-top img-fluid"
-                                      style="width: 100%; height: auto;" loading="lazy">
-                                    <div class="card-body">
-                                      <p class="card-text text-center">Champs "employe_fonction" non renseignés (pas de
-                                        capture car trop de champs vide) </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="card">
+                            <img src="./assets/images/doublon.1.png" alt="Capture d'écran - Doublons de mails"
+                              class="card-img-top img-fluid" style="width: 100%; height: auto;" loading="lazy">
+                            <div class="card-body">
+                              <p class="card-text text-center">Doublons d'adresses e-mail</p>
                             </div>
                           </div>
                         </div>
@@ -978,12 +817,148 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </details>
+
+              <!-- Ajoutez d'autres missions ici -->
+
+              <!-- Mission 3 : Mail erroné RH -->
+              <details class="mission-card">
+                <summary>
+                  <img src="./assets/images/testt.jpeg" alt="Mail erroné RH" loading="lazy">
+                  <div class="card-body">
+                    <h3 class="card-title">Mail erroné RH</h3>
+                    <p class="card-text">Vérification des mails erronés des responsables hiérarchiques</p>
+                  </div>
+                </summary>
+                <div class="mission-details">
+                  <div class="text-container">
+                    <p>
+                      <strong>Objet :</strong> CACEM - Vérification des mails erronés des responsables hiérarchiques de
+                      votre collectivité sur les fiches agents suivantes
+                    </p>
+                    <p>
+                      Bonjour,
+                    </p>
+                    <p>
+                      Je suis EUSTACHE Mathis, stagiaire à la CNFPT. Dans le cadre de mes fonctions, j’ai été
+                      chargé de l’analyse des données de notre base de données, en particulier les adresses
+                      e-mail de vos responsables hiérarchiques.
+                    </p>
+                    <p>
+                      J’ai constaté que certaines de ces adresses e-mail semblent comporter des erreurs ou ne
+                      pas être valides. Cela peut poser un problème car si l’adresse e-mail est incorrecte,
+                      les responsables hiérarchiques ne seront pas en mesure de recevoir les informations
+                      concernant la formation.
+                    </p>
+                    <p>
+                      Il est donc crucial de vérifier ces adresses e-mail et de prendre les mesures
+                      nécessaires pour rectifier cette situation. Je vous invite à examiner ces informations
+                      pour corriger si une erreur est effectivement constatée.
+                    </p>
+                    <p>
+                      Je reste à votre disposition pour toute information complémentaire dont vous pourriez
+                      avoir besoin. Je vous remercie de votre attention et de votre compréhension.
+                    </p>
+                    <p>
+                      Cordialement,
+                    </p>
+                    <p>
+                      EUSTACHE Mathis<br>
+                      Stagiaire à la CNFPT
+                    </p>
+                  </div>
+
+                  <!-- Capture d'écran de la base de données -->
+                  <div class="screenshot-container mt-4">
+                    <h3>Capture d'écran de la base de données</h3>
+                    <p>Voici une capture d'écran montrant les mails erronés des responsables hiérarchiques :</p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card">
+                          <img src="./assets/images/mail-error.png" alt="Capture d'écran - Mails erronés RH"
+                            class="card-img-top img-fluid" style="width: 100%; height: auto;" loading="lazy">
+                          <div class="card-body">
+                            <p class="card-text text-center">Mails erronés des responsables hiérarchiques</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+              <!-- Mission 4 : Champs non renseignés -->
+              <details class="mission-card">
+                <summary>
+                  <img src="./assets/images/une base de données incohérente avec des trous.png"
+                    alt="Champs non renseignés" loading="lazy">
+                  <div class="card-body">
+                    <h3 class="card-title">Champs non renseignés</h3>
+                    <p class="card-text">Vérification des champs manquants</p>
+                  </div>
+                </summary>
+                <div class="mission-details">
+                  <div class="text-container">
+                    <p>
+                      <strong>Objet :</strong> CACEM - Vérification des champs non renseignés
+                    </p>
+                    <p>
+                      Bonjour,
+                    </p>
+                    <p>
+                      Je suis EUSTACHE Mathis, stagiaire à la CNFPT. Dans le cadre de mes fonctions, j’ai été
+                      chargé de l’analyse des données de notre base de données.
+                    </p>
+                    <p>
+                      J’ai constaté que certains champs obligatoires ne sont pas renseignés, comme le champ
+                      "employe_fonction". Cela peut poser un problème pour la gestion des agents.
+                    </p>
+                    <p>
+                      Il est donc crucial de vérifier ces informations et de prendre les mesures nécessaires
+                      pour rectifier cette situation. Je vous invite à examiner ces données pour corriger si
+                      une erreur est effectivement constatée.
+                    </p>
+                    <p>
+                      Je reste à votre disposition pour toute information complémentaire dont vous pourriez
+                      avoir besoin. Je vous remercie de votre attention et de votre compréhension.
+                    </p>
+                    <p>
+                      Cordialement,
+                    </p>
+                    <p>
+                      EUSTACHE Mathis<br>
+                      Stagiaire à la CNFPT
+                    </p>
+                  </div>
+
+                  <!-- Capture d'écran de la base de données -->
+                  <div class="screenshot-container mt-4">
+                    <h3>Capture d'écran de la base de données</h3>
+                    <p>Voici une capture d'écran montrant les champs non renseignés :</p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card">
+                          <img src="./assets/images/une image illisible.png"
+                            alt="Capture d'écran - Champs non renseignés" class="card-img-top img-fluid"
+                            style="width: 100%; height: auto;" loading="lazy">
+                          <div class="card-body">
+                            <p class="card-text text-center">Champs "employe_fonction" non renseignés (pas de capture
+                              car trop de champs vide)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </details>
             </div>
-            <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+          </div>
+    
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-            <!-- <li class="project-item  active" data-filter-item data-category="web development">
+    <!-- <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
 
                 <figure class="project-img">
@@ -1001,362 +976,360 @@
               </a>
             </li> -->
 
-            <!-- Projet CTM -->
-            <div class="container">
-              <div class="row">
-                <li class="project-item active" data-filter-item data-category="Stage CTM"
-                  onclick="openPopup('ctm-popup')">
-                  <a href="#">
-                    <figure class="project-img">
-                      <div class="project-item-icon-box">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </div>
-                      <img src="./assets/images/2ctm.jpeg" width="500" height="300" alt="CTM" loading="lazy">
-                    </figure>
-                    <h3 class="project-title">CTM</h3>
-                    <p class="project-category">Application de Cartographie de la Martinique</p>
-                  </a>
-                </li>
+    <!-- Projet CTM -->
+    <div class="container">
+      <div class="row">
+        <li class="project-item active" data-filter-item data-category="Stage CTM" onclick="openPopup('ctm-popup')">
+          <a href="#">
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
               </div>
+              <img src="./assets/images/2ctm.jpeg" width="500" height="300" alt="CTM" loading="lazy">
+            </figure>
+            <h3 class="project-title">CTM</h3>
+            <p class="project-category">Application de Cartographie de la Martinique</p>
+          </a>
+        </li>
+      </div>
 
-              <div id="ctm-popup" class="popup">
-                <!-- <div class="background">
+      <div id="ctm-popup" class="popup">
+        <!-- <div class="background">
               <div class="stars"></div>
               <div class="twinkling"></div>
               <div class="clouds"></div>
               </div> -->
-                <div class="popup-content container d-flex justify-content-center align-items-center py-5">
-                  <div class="table-responsive">
-                    <span class="close-btn" onclick="closePopup('ctm-popup')">&times;</span>
-                    <h2 class="text-center mb-5 display-4">CTM - Application de Cartographie de la Martinique</h2>
-                    <table class="table table-bordered table-hover table-dark">
-                      <thead>
-                        <tr>
-                          <th scope="col">Titre</th>
-                          <th scope="col">Description</th>
-                          <th scope="col">Vidéo</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Test Global sans API</td>
-                          <td>Première interface de travail sans intégration d'API.</td>
-                          <td>
-                            <video controls style="width: 500px; height: auto;">
-                              <source
-                                src="./assets/videos/Odoo - Region_departement_ville_rue_ test global(sans API) premiere inteface du travail Chrome 2025-01-15.mp4"
-                                type="video/mp4">
-                              Votre navigateur ne supporte pas la balise vidéo.
-                            </video>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Test Global avec API</td>
-                          <td>Première interface de travail avec intégration d'API.</td>
-                          <td>
-                            <video controls style="width: 500px; height: auto;">
-                              <source
-                                src="./assets/videos/Odoo - Region_departement_ville_rue_ test global(avec API) premiere inteface du travail.mp4"
-                                type="video/mp4">
-                              Votre navigateur ne supporte pas la balise vidéo.
-                            </video>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Évolution du projet avec base de données</td>
-                          <td>Intégration de la base de données pour les voies.</td>
-                          <td>
-                            <video controls style="width: 500px; height: auto;">
-                              <source
-                                src="./assets/videos/Odoo - Voies - evolution du projet avec base de données 2025-01-30 10-59-56.mp4"
-                                type="video/mp4">
-                              Votre navigateur ne supporte pas la balise vidéo.
-                            </video>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Test Global avec API et codes postaux</td>
-                          <td>Ajout des données pour les codes postaux.</td>
-                          <td>
-                            <video controls style="width: 500px; height: auto;">
-                              <source
-                                src="./assets/videos/Odoo - Code Postal Region_departement_ville_rue_ test global(avec API) avec ajout des données pour les codes postaux 2025-01-27.mp4"
-                                type="video/mp4">
-                              Votre navigateur ne supporte pas la balise vidéo.
-                            </video>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Intégration de la carte en pop-up</td>
-                          <td>Test d'intégration de la carte sous forme de pop-up dans la vue Kanban.</td>
-                          <td>
-                            <video controls style="width: 500px; height: auto;">
-                              <source
-                                src="./assets/videos/Odoo - Quartier - test d'intégration de la cartes sous forme pop up dans la vue kanban 2025-01-31 11-20-09.mp4"
-                                type="video/mp4">
-                              Votre navigateur ne supporte pas la balise vidéo.
-                            </video>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="popup-content container d-flex justify-content-center align-items-center py-5">
+          <div class="table-responsive">
+            <span class="close-btn" onclick="closePopup('ctm-popup')">&times;</span>
+            <h2 class="text-center mb-5 display-4">CTM - Application de Cartographie de la Martinique</h2>
+            <table class="table table-bordered table-hover table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">Titre</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Vidéo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Test Global sans API</td>
+                  <td>Première interface de travail sans intégration d'API.</td>
+                  <td>
+                    <video controls style="width: 500px; height: auto;">
+                      <source
+                        src="./assets/videos/Odoo - Region_departement_ville_rue_ test global(sans API) premiere inteface du travail Chrome 2025-01-15.mp4"
+                        type="video/mp4">
+                      Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Test Global avec API</td>
+                  <td>Première interface de travail avec intégration d'API.</td>
+                  <td>
+                    <video controls style="width: 500px; height: auto;">
+                      <source
+                        src="./assets/videos/Odoo - Region_departement_ville_rue_ test global(avec API) premiere inteface du travail.mp4"
+                        type="video/mp4">
+                      Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Évolution du projet avec base de données</td>
+                  <td>Intégration de la base de données pour les voies.</td>
+                  <td>
+                    <video controls style="width: 500px; height: auto;">
+                      <source
+                        src="./assets/videos/Odoo - Voies - evolution du projet avec base de données 2025-01-30 10-59-56.mp4"
+                        type="video/mp4">
+                      Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Test Global avec API et codes postaux</td>
+                  <td>Ajout des données pour les codes postaux.</td>
+                  <td>
+                    <video controls style="width: 500px; height: auto;">
+                      <source
+                        src="./assets/videos/Odoo - Code Postal Region_departement_ville_rue_ test global(avec API) avec ajout des données pour les codes postaux 2025-01-27.mp4"
+                        type="video/mp4">
+                      Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Intégration de la carte en pop-up</td>
+                  <td>Test d'intégration de la carte sous forme de pop-up dans la vue Kanban.</td>
+                  <td>
+                    <video controls style="width: 500px; height: auto;">
+                      <source
+                        src="./assets/videos/Odoo - Quartier - test d'intégration de la cartes sous forme pop up dans la vue kanban 2025-01-31 11-20-09.mp4"
+                        type="video/mp4">
+                      Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </section>
-        <br>
-        <br>
-        <br>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+    <br>
+    <br>
+    <br>
 
-        <!--
+    <!--
           - testimonials
         -->
 
-        <section class="testimonials">
+    <section class="testimonials">
 
-          <h3 class="h3 testimonials-title">Témoignages</h3>
+      <h3 class="h3 testimonials-title">Témoignages</h3>
 
-          <ul class="testimonials-list has-scrollbar">
+      <ul class="testimonials-list has-scrollbar">
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/cnfpt.png" alt="Pascal SAINT-CYR" width="60" data-testimonials-avatar>
-                </figure>
+            <figure class="testimonials-avatar-box">
+              <img src="./assets/images/cnfpt.png" alt="Pascal SAINT-CYR" width="60" data-testimonials-avatar>
+            </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Pascal SAINT-CYR</h4>
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Pascal SAINT-CYR</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    __
+            <div class="testimonials-text" data-testimonials-text>
+              <p>
+                __
 
-                    Pascal SAINT-CYR
-                    __
-                  </p>
-                </div>
+                Pascal SAINT-CYR
+                __
+              </p>
+            </div>
 
-              </div>
-            </li>
+          </div>
+        </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/data.png" alt="Benjamin TINAUGUS" width="60" data-testimonials-avatar>
-                </figure>
+            <figure class="testimonials-avatar-box">
+              <img src="./assets/images/data.png" alt="Benjamin TINAUGUS" width="60" data-testimonials-avatar>
+            </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Benjamin TINAUGUS</h4>
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Benjamin TINAUGUS</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    "Monsieur EUSTACHE a fait preuve d'une grande autonomie, d'une curiosité intellectuelle et de
-                    solides compétences techniques tout au long de son stage. Son travail a été déterminant pour la
-                    réussite
-                    du projet de cartographie, et ses propositions innovantes ont été très appréciées. Je recommande
-                    vivement Monsieur EUSTACHE
-                    pour ses qualités professionnelles et sa capacité à s'adapter à des environnements techniques
-                    complexes."
-                  </p>
-                </div>
+            <div class="testimonials-text" data-testimonials-text>
+              <p>
+                "Monsieur EUSTACHE a fait preuve d'une grande autonomie, d'une curiosité intellectuelle et de
+                solides compétences techniques tout au long de son stage. Son travail a été déterminant pour la
+                réussite
+                du projet de cartographie, et ses propositions innovantes ont été très appréciées. Je recommande
+                vivement Monsieur EUSTACHE
+                pour ses qualités professionnelles et sa capacité à s'adapter à des environnements techniques
+                complexes."
+              </p>
+            </div>
 
-              </div>
-            </li>
+          </div>
+        </li>
 
-          </ul>
+      </ul>
 
-        </section>
+    </section>
 
 
-        <!--
+    <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+    <div class="modal-container" data-modal-container>
 
-          <div class="overlay" data-overlay></div>
+      <div class="overlay" data-overlay></div>
 
-          <section class="testimonials-modal">
+      <section class="testimonials-modal">
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
+        <button class="modal-close-btn" data-modal-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
 
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="" alt="" width="80" data-modal-img> <!-- Avatar dynamique -->
-              </figure>
+        <div class="modal-img-wrapper">
+          <figure class="modal-avatar-box">
+            <img src="" alt="" width="80" data-modal-img> <!-- Avatar dynamique -->
+          </figure>
 
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
+          <img src="./assets/images/icon-quote.svg" alt="quote icon">
+        </div>
 
-            <div class="modal-content">
+        <div class="modal-content">
 
-              <h4 class="h3 modal-title" data-modal-title></h4> <!-- Nom dynamique -->
+          <h4 class="h3 modal-title" data-modal-title></h4> <!-- Nom dynamique -->
 
-              <time datetime="" data-modal-date></time> <!-- Date dynamique -->
+          <time datetime="" data-modal-date></time> <!-- Date dynamique -->
 
-              <div data-modal-text>
-                <p></p> <!-- Texte dynamique -->
-              </div>
-
-            </div>
-
-          </section>
+          <div data-modal-text>
+            <p></p> <!-- Texte dynamique -->
+          </div>
 
         </div>
 
+      </section>
 
-        <!--
+    </div>
+
+
+    <!--
           - clients
         -->
 
-        <section class="clients">
+    <section class="clients">
 
-          <h3 class="h3 clients-title">Clients</h3>
+      <h3 class="h3 clients-title">Clients</h3>
 
-          <ul class="clients-list has-scrollbar">
+      <ul class="clients-list has-scrollbar">
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/dc37cc00-3be0-41a2-a14e-693ec9a6593f.jpg" alt="client logo" width="400"
-                  height="250" style="object-fit: cover;">
-              </a>
-            </li>
+        <li class="clients-item">
+          <a href="#">
+            <img src="./assets/images/dc37cc00-3be0-41a2-a14e-693ec9a6593f.jpg" alt="client logo" width="400"
+              height="250" style="object-fit: cover;">
+          </a>
+        </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/ctm.jpeg" alt="client logo" width="400" height="250"
-                  style="object-fit: cover;">
-              </a>
-            </li>
+        <li class="clients-item">
+          <a href="#">
+            <img src="./assets/images/ctm.jpeg" alt="client logo" width="400" height="250" style="object-fit: cover;">
+          </a>
+        </li>
 
-          </ul>
+      </ul>
 
-        </section>
-      </article>
-
+    </section>
+    </article>
 
 
-      <!--
+
+    <!--
         - #BLOG
       -->
 
-      <article class="blog" data-page="certification">
+    <article class="blog" data-page="certification">
 
-        <header>
-          <h2 class="h2 article-title">Certification</h2>
-        </header>
+      <header>
+        <h2 class="h2 article-title">Certification</h2>
+      </header>
 
-        <section class="certifications-list">
-          <div class="container">
-            <div class="row g-3"> <!-- Classe g-3 ajoute de l'espace entre les cases -->
-              <!-- Certification Microsoft 1 -->
-              <div class="col-md-3 col-sm-6 col-12">
-                <div class="p-3 border bg-light">
-                  <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/MathisEustache-4964/WZC8RQCN?sharingId=C2CC8086E11AE475"
-                    target="_blank">
-                    <figure class="certification-banner-box text-center">
-                      <img src="./assets/images/generic-badge.svg" alt="Certification Microsoft 1" loading="lazy"
-                        class="certification-image">
-                    </figure>
-                    <div class="certification-content">
-                      <div class="certification-meta">
-                        <p class="certification-category">Microsoft</p>
-                      </div>
-                      <h3 class="h3 certification-item-title">Certification Microsoft 1</h3>
-                      <p class="certification-text">
-                        Certification obtenue auprès de Microsoft.
-                      </p>
+      <section class="certifications-list">
+        <div class="container">
+          <div class="row g-3"> <!-- Classe g-3 ajoute de l'espace entre les cases -->
+            <!-- Certification Microsoft 1 -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="p-3 border bg-light">
+                <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/MathisEustache-4964/WZC8RQCN?sharingId=C2CC8086E11AE475"
+                  target="_blank">
+                  <figure class="certification-banner-box text-center">
+                    <img src="./assets/images/generic-badge.svg" alt="Certification Microsoft 1" loading="lazy"
+                      class="certification-image">
+                  </figure>
+                  <div class="certification-content">
+                    <div class="certification-meta">
+                      <p class="certification-category">Microsoft</p>
                     </div>
-                  </a>
-                </div>
-              </div>
-              <br>
-              <br>
-
-              <!-- Certification Microsoft 2 -->
-              <div class="col-md-3 col-sm-6 col-12">
-                <div class="p-3 border bg-light">
-                  <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/MathisEustache-4964/3RLK4VPH?sharingId=C2CC8086E11AE475"
-                    target="_blank">
-                    <figure class="certification-banner-box text-center">
-                      <img src="./assets/images/get-started-ai-fundamentals.svg" alt="Certification Microsoft 2"
-                        loading="lazy" class="certification-image">
-                    </figure>
-                    <div class="certification-content">
-                      <div class="certification-meta">
-                        <p class="certification-category">Microsoft</p>
-                      </div>
-                      <h3 class="h3 certification-item-title">Certification Microsoft 2</h3>
-                      <p class="certification-text">
-                        Certification obtenue auprès de Microsoft.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <br>
-              <br>
-
-              <!-- Certification PIX -->
-              <div class="col-md-3 col-sm-6 col-12">
-                <div class="p-3 border bg-light">
-                  <a href="#">
-                    <figure class="certification-banner-box text-center">
-                      <img src="./assets/images/pix-logo.svg" alt="Certification PIX" loading="lazy"
-                        class="certification-image">
-                    </figure>
-                    <div class="certification-content">
-                      <div class="certification-meta">
-                        <p class="certification-category">PIX</p>
-                      </div>
-                      <h3 class="h3 certification-item-title">Certification PIX</h3>
-                      <p class="certification-text">
-                        Certification PIX obtenue pour valider mes compétences numériques.
-                      </p>
-                    </div>
-                  </a>
-                  <!-- Affichage du PDF PIX -->
-                  <div class="pdf-viewer mt-3">
-                    <iframe src="./assets/pdf/attestation-pix-20250211.pdf" width="100%" height="200px"
-                      style="border: none;">
-                      Votre navigateur ne supporte pas l'affichage de PDF. Vous pouvez <a
-                        href="./assets/pdf/attestation-pix-20250211.pdf">télécharger le fichier</a>.
-                    </iframe>
+                    <h3 class="h3 certification-item-title">Certification Microsoft 1</h3>
+                    <p class="certification-text">
+                      Certification obtenue auprès de Microsoft.
+                    </p>
                   </div>
-                </div>
+                </a>
               </div>
-              <br>
-              <br>
+            </div>
+            <br>
+            <br>
 
-              <!-- Certification Java -->
-              <div class="col-md-3 col-sm-6 col-12">
-                <div class="p-3 border bg-light">
-                  <a href="#">
-                    <figure class="certification-banner-box text-center">
-                      <img src="./assets/images/OIP.jpeg" alt="Certification Java" loading="lazy"
-                        class="certification-image">
-                    </figure>
-                    <div class="certification-content">
-                      <div class="certification-meta">
-                        <p class="certification-category">Java</p>
-                      </div>
-                      <h3 class="h3 certification-item-title">Certification Java</h3>
-                      <p class="certification-text">
-                        Certification obtenue pour valider mes compétences en programmation Java.
-                      </p>
+            <!-- Certification Microsoft 2 -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="p-3 border bg-light">
+                <a href="https://learn.microsoft.com/api/achievements/share/fr-fr/MathisEustache-4964/3RLK4VPH?sharingId=C2CC8086E11AE475"
+                  target="_blank">
+                  <figure class="certification-banner-box text-center">
+                    <img src="./assets/images/get-started-ai-fundamentals.svg" alt="Certification Microsoft 2"
+                      loading="lazy" class="certification-image">
+                  </figure>
+                  <div class="certification-content">
+                    <div class="certification-meta">
+                      <p class="certification-category">Microsoft</p>
                     </div>
-                  </a>
-                  <!-- Affichage du PDF Java -->
+                    <h3 class="h3 certification-item-title">Certification Microsoft 2</h3>
+                    <p class="certification-text">
+                      Certification obtenue auprès de Microsoft.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- Certification PIX -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="p-3 border bg-light">
+                <a href="#">
+                  <figure class="certification-banner-box text-center">
+                    <img src="./assets/images/pix-logo.svg" alt="Certification PIX" loading="lazy"
+                      class="certification-image">
+                  </figure>
+                  <div class="certification-content">
+                    <div class="certification-meta">
+                      <p class="certification-category">PIX</p>
+                    </div>
+                    <h3 class="h3 certification-item-title">Certification PIX</h3>
+                    <p class="certification-text">
+                      Certification PIX obtenue pour valider mes compétences numériques.
+                    </p>
+                  </div>
+                </a>
+                <!-- Affichage du PDF PIX -->
+                <div class="pdf-viewer mt-3">
+                  <iframe src="./assets/pdf/attestation-pix-20250211.pdf" width="100%" height="200px"
+                    style="border: none;">
+                    Votre navigateur ne supporte pas l'affichage de PDF. Vous pouvez <a
+                      href="./assets/pdf/attestation-pix-20250211.pdf">télécharger le fichier</a>.
+                  </iframe>
                 </div>
               </div>
             </div>
+            <br>
+            <br>
+
+            <!-- Certification Java -->
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="p-3 border bg-light">
+                <a href="#">
+                  <figure class="certification-banner-box text-center">
+                    <img src="./assets/images/OIP.jpeg" alt="Certification Java" loading="lazy"
+                      class="certification-image">
+                  </figure>
+                  <div class="certification-content">
+                    <div class="certification-meta">
+                      <p class="certification-category">Java</p>
+                    </div>
+                    <h3 class="h3 certification-item-title">Certification Java</h3>
+                    <p class="certification-text">
+                      Certification obtenue pour valider mes compétences en programmation Java.
+                    </p>
+                  </div>
+                </a>
+                <!-- Affichage du PDF Java -->
+              </div>
+            </div>
           </div>
-    </div>
-    </section>
+        </div>
+        </div>
+      </section>
     </article>
 
 
