@@ -2055,6 +2055,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   display: block; /* Affiché lorsque la carte est cliquée */
 }
 
+.mission-card summary {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
 .certification-image {
   width: 100px; /* Taille fixe pour la largeur */
   height: 100px; /* Taille fixe pour la hauteur */
