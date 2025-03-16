@@ -2072,3 +2072,10 @@ a {
   text-decoration: none;
 }
 
+details {
+  margin-bottom: 10px;
+}
+summary {
+  cursor: pointer;
+  font-weight: bold;
+}
