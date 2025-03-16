@@ -1,145 +1,79 @@
-/*import React, { useState } from "react";
-import "./App.css"; // Fichier CSS personnalisé
+import React from "react";
+import "./App.css"; // Fichier CSS pour le style
 
 const App = () => {
-  const [showPopup, setShowPopup] = useState(false);
-
-  const togglePopup = () => {
-    setShowPopup(!showPopup);
-  };
-
   return (
-    <div className="portfolio" data-page="portfolio">*/
-    
-      {/* En-tête */}
+    <div className="veille-technologique">
+      <h1>Veille Technologique</h1>
+      <p>
+        Bienvenue sur ma page de veille technologique. Je partage ici les dernières tendances et avancées dans les domaines suivants :
+      </p>
 
-      /*
-      <header>
-        <h2 className="h2 article-title">Portfolio</h2>
-      </header>
-*/
-      {/* Liste de filtres */}
+      {/* Section IA */}
+      <section className="veille-section">
+        <h2>Intelligence Artificielle (IA)</h2>
+        <p>
+          L'IA est en pleine expansion. Voici quelques sujets que je suis :
+        </p>
+        <ul>
+          <li>Les modèles de langage comme GPT-4.</li>
+          <li>L'IA générative (images, musique, etc.).</li>
+          <li>Les applications de l'IA dans la santé et la finance.</li>
+        </ul>
+      </section>
 
-      /*
-      <section className="projects">
-        <ul className="filter-list">
-          <li className="filter-item">
-            <button className="active">All</button>
+      {/* Section Crypto */}
+      <section className="veille-section">
+        <h2>Cryptomonnaies et Blockchain</h2>
+        <p>
+          La blockchain et les cryptomonnaies évoluent rapidement. Voici ce que je surveille :
+        </p>
+        <ul>
+          <li>Les nouvelles régulations autour des cryptomonnaies.</li>
+          <li>Les avancées technologiques comme Ethereum 2.0.</li>
+          <li>Les applications de la blockchain dans l'industrie.</li>
+        </ul>
+      </section>
+
+      {/* Section Développement Web */}
+      <section className="veille-section">
+        <h2>Développement Web</h2>
+        <p>
+          Le développement web ne cesse d'évoluer. Voici les tendances actuelles :
+        </p>
+        <ul>
+          <li>Les frameworks JavaScript (React, Vue, Svelte).</li>
+          <li>Les outils de développement (Vite, Webpack, etc.).</li>
+          <li>Les bonnes pratiques en matière de sécurité web.</li>
+        </ul>
+      </section>
+
+      {/* Section Ressources */}
+      <section className="veille-section">
+        <h2>Ressources</h2>
+        <p>
+          Voici quelques ressources que j'utilise pour ma veille :
+        </p>
+        <ul>
+          <li>
+            <a href="https://daily.dev" target="_blank" rel="noopener noreferrer">
+              daily.dev
+            </a>
           </li>
-          <li className="filter-item">
-            <button>Web design</button>
+          <li>
+            <a href="https://medium.com" target="_blank" rel="noopener noreferrer">
+              Medium
+            </a>
           </li>
-          <li className="filter-item">
-            <button>Applications</button>
+          <li>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
           </li>
-          <li className="filter-item">
-            <button>Web development</button>
-          </li>
-        </ul>*/
-
-        {/* Sélecteur de catégorie */}
-
-        /*<div className="filter-select-box">
-          <button className="filter-select">
-            <div className="select-value">Select category</div>
-            <div className="select-icon">
-              <ion-icon name="chevron-down"></ion-icon>
-            </div>
-          </button>
-
-          <ul className="select-list">
-            <li className="select-item">
-              <button>All</button>
-            </li>
-            <li className="select-item">
-              <button>Web design</button>
-            </li>
-            <li className="select-item">
-              <button>Applications</button>
-            </li>
-            <li className="select-item">
-              <button>Web development</button>
-            </li>
-          </ul>
-        </div>
-      </section>*/
-
-      {/* Projet et bouton Mission 1 */}
-
-      /*
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-md-8 text-center">
-            <div
-              className="project-item active"
-              data-category="web development"
-              onClick={togglePopup}
-            >
-              <a href="#">
-                <figure className="project-img">
-                  <div className="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img
-                    src="./assets/images/cnfpt.png"
-                    alt="CNFPT-stage"
-                    loading="lazy"
-                    width="500"
-                    height="300"
-                  />
-                </figure>
-                <h3 className="project-title">CNFPT-stage</h3>
-                <p className="project-category">Traitement de Base de données</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>*/
-
-      {/* Popup */}
-
-        /*
-      {showPopup && (
-        <div className="popup">
-          <div className="popup-content">
-            <span className="close-btn" onClick={togglePopup}>
-              &times;
-            </span>
-            <h2 className="text-center">CNFPT-stage</h2>
-            <p className="text-center">Traitement de Base de données</p>
-            <div className="text-container">
-              <p>
-                <strong>Objet :</strong> Vérification de l'âge des employés dans
-                notre base de données
-              </p>
-              <p>
-                Bonjour, je suis EUSTACHE Mathis, stagiaire au CNFPT.*/
-
-                {/* Ajoutezplus de contenu ici */}
-
-                /*
-              </p>
-            </div>
-            <div className="screenshot-container">
-              <h3>Capture d'écran de la base de données</h3>
-              <p>Voici une capture d'écran montrant les erreurs détectées :</p>
-              <img
-                src="./assets/images/verif age.png"
-                alt="Capture moins de 18 ans"
-                className="img-fluid"
-              />
-              <img
-                src="./assets/images/verif age+68.png"
-                alt="Capture plus de 68 ans"
-                className="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-      )}
+        </ul>
+      </section>
     </div>
   );
 };
 
 export default App;
-*/
