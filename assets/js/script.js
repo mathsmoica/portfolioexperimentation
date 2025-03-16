@@ -195,3 +195,13 @@ document.addEventListener('keydown', function (event) {
 //   const details = document.getElementById(id);
 //   details.classList.toggle('active');
 // }
+
+document.querySelectorAll('details').forEach(detail => {
+  detail.addEventListener('toggle', () => {
+    if (detail.open) {
+      console.log('Détails ouverts');
+    } else {
+      console.log('Détails fermés');
+    }
+  });
+});
