@@ -12,14 +12,14 @@
 <body class="dark-theme">
     <style>
         /* Fond étoilé */
-        .background {
+        /* .background {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             z-index: -1;
-        }
+        } */
 
         .stars,
         .twinkling,
@@ -72,6 +72,8 @@
             padding: 0;
             color: #ffffff;
             background: #000;
+            position: relative; /* Permet au contenu d'être bien affiché */
+            z-index: 1;
         }
 
         /* Conteneur des sections */
@@ -79,6 +81,8 @@
             max-width: 900px;
             margin: auto;
             padding: 20px;
+            position: relative;
+            z-index: 2; 
         }
 
         /* En-tête */
@@ -110,7 +114,9 @@
             border-radius: 8px;
             margin-bottom: 20px;
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-        }
+            position: relative;
+             z-index: 2; /* Garantit que les sections sont visibles */
+}
 
         /* Pied de page */
         footer {
@@ -205,8 +211,6 @@
                 <p>&copy; 2024 Veille Technologique. Tous droits réservés.</p>
             </div>
         </footer>
-
-        <script src="script.js"></script>
 </body>
 
 </html>
