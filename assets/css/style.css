@@ -2112,3 +2112,8 @@ summary {
   width: 100%;
   height: auto;
 }
+
+.titre-blanc {
+  color: white;
+  text-align: center;
+}
