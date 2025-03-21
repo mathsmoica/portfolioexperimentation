@@ -653,33 +653,50 @@
             <br>
             <br>
             <h2 class="titre-blanc">Missions CNFPT</h2>
-          
+
             <div class="tab-container">
-              <button class="tab-button active" onclick="showTab(0)">Vérification de l'âge</button>
-              <button class="tab-button" onclick="showTab(1)">Doublons de mails</button>
-              <button class="tab-button" onclick="showTab(2)">Mail erroné RH</button>
-              <button class="tab-button" onclick="showTab(3)">Champs non renseignés</button>
+              <button class="tab-button active" onclick="showTab(0)">Introduction</button>
+              <button class="tab-button" onclick="showTab(1)">Vérification de l'âge</button>
+              <button class="tab-button" onclick="showTab(2)">Doublons de mails</button>
+              <button class="tab-button" onclick="showTab(3)">Mail erroné RH</button>
+              <button class="tab-button" onclick="showTab(4)">Champs non renseignés</button>
+              <button class="tab-button" onclick="showTab(5)">Compétences utilisées</button>
             </div>
-          
+
             <!-- Introduction globale -->
             <div class="tab-content active">
               <h3>Introduction</h3>
               <p>
-                Dans le cadre de mon stage au CNFPT, j'ai été chargé de la maintenance et de la vérification de la base de données des agents. Cette mission consistait à identifier et corriger les erreurs de saisie, garantir l'intégrité des données, et faciliter les processus métiers tels que la communication avec les agents et la gestion des formations. Voici les principales tâches que j'ai réalisées :
+                Dans le cadre de mon stage au CNFPT, j'ai été chargé de la maintenance et de la vérification de la base
+                de données des agents. Cette mission consistait à identifier et corriger les erreurs de saisie, garantir
+                l'intégrité des données, et faciliter les processus métiers tels que la communication avec les agents et
+                la gestion des formations. Voici les principales tâches que j'ai réalisées :
               </p>
               <ul>
                 <li>Vérification et correction des erreurs d'âge (agents de moins de 18 ans et de plus de 68 ans).</li>
                 <li>Identification et résolution des doublons d'adresses e-mail.</li>
                 <li>Correction des adresses e-mail erronées des responsables hiérarchiques.</li>
                 <li>Vérification des champs obligatoires non renseignés.</li>
+                <li>Erreur de saisie dans Mail Perso : Mail Perso = Mail Pro / Doublons.</li>
+                <li>Erreur de saisie dans Date de Naissance : en dessous de 18 ans.</li>
+                <li>Erreur de saisie dans Date de Naissance : au-dessus de 68 ans.</li>
+                <li>Erreur de saisie dans Nom de Naissance, Prénom : Doublons.</li>
+                <li>Erreur de saisie dans Mail Perso : Doublons.</li>
+                <li>Erreur de saisie dans Mail Pro : Doublons.</li>
+                <li>Erreur de saisie dans les mails Pro : nom de domaine erroné dans la saisie.</li>
+                <li>Erreur de saisie dans les mails Pro des Responsables hiérarchiques.</li>
+                <li>Erreur de saisie dans Emploi Fonction : "A Définir".</li>
+                <li>Erreur de saisie dans Emploi Fonction : Champs vide.</li>
               </ul>
             </div>
-          
+
             <!-- Vérification de l'âge -->
             <div class="tab-content">
               <h3>Vérification de l'âge</h3>
               <p>
-                J'ai identifié les agents dont la date de naissance indiquait un âge inférieur à 18 ans ou supérieur à 68 ans. Pour cela, j'ai utilisé des requêtes SQL pour filtrer les dates de naissance. J'ai ensuite contacté les collectivités pour vérifier ces informations et corriger les erreurs.
+                J'ai identifié les agents dont la date de naissance indiquait un âge inférieur à 18 ans ou supérieur à
+                68 ans. Pour cela, j'ai utilisé des requêtes SQL pour filtrer les dates de naissance. J'ai ensuite
+                contacté les collectivités pour vérifier ces informations et corriger les erreurs.
               </p>
               <div class="screenshot-container">
                 <h3> Résultat des Requête SQL pour identifier les agents de moins de 18 ans</h3>
@@ -688,24 +705,27 @@
                 <img src="./assets/images/verif age+68.png" alt="Requête SQL - Plus de 68 ans" class="card-img-top">
               </div>
             </div>
-          
+
             <!-- Doublons de mails -->
             <div class="tab-content">
               <h3>Doublons de mails</h3>
               <p>
-                J'ai détecté les doublons d'adresses e-mail en utilisant des requêtes SQL. Après avoir identifié les doublons, j'ai contacté les collectivités pour obtenir des adresses uniques et mis à jour la base de données.
+                J'ai détecté les doublons d'adresses e-mail en utilisant des requêtes SQL. Après avoir identifié les
+                doublons, j'ai contacté les collectivités pour obtenir des adresses uniques et mis à jour la base de
+                données.
               </p>
               <div class="screenshot-container">
                 <h3>Requête SQL pour identifier les doublons d'adresses e-mail</h3>
                 <img src="./assets/images/doublon_sql.png" alt="Requête SQL - Doublons de mails" class="card-img-top">
               </div>
             </div>
-          
+
             <!-- Mail erroné RH -->
             <div class="tab-content">
               <h3>Mail erroné RH</h3>
               <p>
-                J'ai vérifié la validité des adresses e-mail des responsables hiérarchiques en utilisant un script de validation. Les adresses erronées ont été corrigées après contact avec les collectivités.
+                J'ai vérifié la validité des adresses e-mail des responsables hiérarchiques en utilisant un script de
+                validation. Les adresses erronées ont été corrigées après contact avec les collectivités.
               </p>
               <div class="screenshot-container">
                 <h3>Requête SQL pour identifier les mails erronés des responsables hiérarchiques</h3>
@@ -714,21 +734,24 @@
                 <img src="./assets/images/Capture5.PNG" alt="Réponse collectivité - Mails erronés" class="card-img-top">
               </div>
             </div>
-          
+
             <!-- Champs non renseignés -->
             <div class="tab-content">
               <h3>Champs non renseignés</h3>
               <p>
-                J'ai identifié les champs obligatoires non renseignés, comme le champ "employe_fonction". J'ai contacté les collectivités pour obtenir les informations manquantes et mis à jour la base de données.
+                J'ai identifié les champs obligatoires non renseignés, comme le champ "employe_fonction". J'ai contacté
+                les collectivités pour obtenir les informations manquantes et mis à jour la base de données.
               </p>
               <div class="screenshot-container">
                 <h3>Requête SQL pour identifier les champs non renseignés</h3>
-                <img src="./assets/images/champs_vide_sql.png" alt="Requête SQL - Champs non renseignés" class="card-img-top">
+                <img src="./assets/images/champs_vide_sql.png" alt="Requête SQL - Champs non renseignés"
+                  class="card-img-top">
                 <h3>Réponse d'une collectivité concernant les champs non renseignés</h3>
-                <img src="./assets/images/Capture6.PNG" alt="Réponse collectivité - Champs non renseignés" class="card-img-top">
+                <img src="./assets/images/Capture6.PNG" alt="Réponse collectivité - Champs non renseignés"
+                  class="card-img-top">
               </div>
             </div>
-          
+
             <!-- Compétences utilisées -->
             <div class="tab-content">
               <h3>Compétences utilisées</h3>
@@ -736,19 +759,21 @@
                 Cette mission m'a permis de développer et d'utiliser les compétences suivantes :
               </p>
               <ul>
-                <li><strong>Compétences techniques :</strong> SQL, gestion de bases de données, validation des données.</li>
-                <li><strong>Compétences transversales :</strong> Communication avec les collectivités, rigueur, résolution de problèmes.</li>
+                <li><strong>Compétences techniques :</strong> SQL, gestion de bases de données, validation des données.
+                </li>
+                <li><strong>Compétences transversales :</strong> Communication avec les collectivités, rigueur,
+                  résolution de problèmes.</li>
               </ul>
             </div>
-          
+
             <script>
               function showTab(index) {
                 let tabs = document.querySelectorAll(".tab-content");
                 let buttons = document.querySelectorAll(".tab-button");
-          
+
                 tabs.forEach(tab => tab.classList.remove("active"));
                 buttons.forEach(button => button.classList.remove("active"));
-          
+
                 tabs[index].classList.add("active");
                 buttons[index].classList.add("active");
               }
