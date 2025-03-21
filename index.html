@@ -657,7 +657,6 @@
             <div class="tab-container">
               <button class="tab-button active" onclick="showTab(0)">Introduction</button>
               <button class="tab-button" onclick="showTab(1)">Vérification de l'âge</button>
-              <button class="tab-button" onclick="showTab(2)">Doublons de mails</button>
               <button class="tab-button" onclick="showTab(3)">Mail erroné RH</button>
               <button class="tab-button" onclick="showTab(4)">Champs non renseignés</button>
               <button class="tab-button" onclick="showTab(5)">Compétences utilisées</button>
@@ -707,18 +706,7 @@
             </div>
 
             <!-- Doublons de mails -->
-            <div class="tab-content">
-              <h3>Doublons de mails</h3>
-              <p>
-                J'ai détecté les doublons d'adresses e-mail en utilisant des requêtes SQL. Après avoir identifié les
-                doublons, j'ai contacté les collectivités pour obtenir des adresses uniques et mis à jour la base de
-                données.
-              </p>
-              <div class="screenshot-container">
-                <h3>Requête SQL pour identifier les doublons d'adresses e-mail</h3>
-                <img src="./assets/images/doublon_sql.png" alt="Requête SQL - Doublons de mails" class="card-img-top">
-              </div>
-            </div>
+
 
             <!-- Mail erroné RH -->
             <div class="tab-content">
@@ -743,9 +731,6 @@
                 les collectivités pour obtenir les informations manquantes et mis à jour la base de données.
               </p>
               <div class="screenshot-container">
-                <h3>Requête SQL pour identifier les champs non renseignés</h3>
-                <img src="./assets/images/champs_vide_sql.png" alt="Requête SQL - Champs non renseignés"
-                  class="card-img-top">
                 <h3>Réponse d'une collectivité concernant les champs non renseignés</h3>
                 <img src="./assets/images/Capture6.PNG" alt="Réponse collectivité - Champs non renseignés"
                   class="card-img-top">
@@ -762,7 +747,11 @@
                 <li><strong>Compétences techniques :</strong> SQL, gestion de bases de données, validation des données.
                 </li>
                 <li><strong>Compétences transversales :</strong> Communication avec les collectivités, rigueur,
-                  résolution de problèmes.</li>
+                  résolution de problèmes.
+                  Planification et gestion de projet.
+                </li>
+
+
               </ul>
             </div>
 
@@ -842,7 +831,11 @@
                     <tbody>
                       <tr>
                         <td>Test Global sans API</td>
-                        <td>Première interface de travail sans intégration d'API.</td>
+                        <td>Présentation de la première version de l'application de cartographie développée sans
+                          l'intégration d'une API externe. Cette phase a permis de valider la structure de base de
+                          l'application, d'assurer l'affichage des adresses et de tester les fonctionnalités
+                          fondamentales avant d'incorporer des services tiers pour enrichir les données géographiques.
+                        </td>
                         <td>
                           <video controls style="width: 500px; height: auto;">
                             <source
@@ -854,7 +847,10 @@
                       </tr>
                       <tr>
                         <td>Test Global avec API</td>
-                        <td>Première interface de travail avec intégration d'API.</td>
+                        <td>Cette vidéo illustre l'intégration d'une API pour enrichir l'application avec des données
+                          géographiques plus précises. L'API permet de récupérer dynamiquement les informations
+                          relatives aux régions, départements, villes et rues, améliorant ainsi la fiabilité et
+                          l'actualisation des données pour la gestion des subventions.</td>
                         <td>
                           <video controls style="width: 500px; height: auto;">
                             <source
@@ -866,7 +862,10 @@
                       </tr>
                       <tr>
                         <td>Évolution du projet avec base de données</td>
-                        <td>Intégration de la base de données pour les voies.</td>
+                        <td>Cette étape présente l'intégration d'une base de données pour stocker et gérer les
+                          informations relatives aux voies. Cela a permis d'optimiser la gestion des adresses, de
+                          faciliter les recherches et d'assurer la persistance des données, garantissant ainsi une
+                          meilleure gestion et un accès plus rapide aux informations cartographiques.</td>
                         <td>
                           <video controls style="width: 500px; height: auto;">
                             <source
@@ -878,7 +877,10 @@
                       </tr>
                       <tr>
                         <td>Test Global avec API et codes postaux</td>
-                        <td>Ajout des données pour les codes postaux.</td>
+                        <td>Ajout de la gestion des codes postaux dans l'application, en complément des données
+                          géographiques existantes. Cette amélioration permet d'affiner la précision de la
+                          localisation, facilitant ainsi la saisie et le traitement des informations pour les services
+                          administratifs de la CTM.</td>
                         <td>
                           <video controls style="width: 500px; height: auto;">
                             <source
@@ -890,7 +892,10 @@
                       </tr>
                       <tr>
                         <td>Intégration de la carte en pop-up</td>
-                        <td>Test d'intégration de la carte sous forme de pop-up dans la vue Kanban.</td>
+                        <td>Ce test démontre l'implémentation d'une carte interactive sous forme de pop-up dans la vue
+                          Kanban de l'application. Cette fonctionnalité offre une visualisation plus intuitive et
+                          ergonomique des données géographiques, facilitant l'analyse et la prise de décision pour les
+                          gestionnaires de subventions.</td>
                         <td>
                           <video controls style="width: 500px; height: auto;">
                             <source
